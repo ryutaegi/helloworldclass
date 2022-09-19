@@ -5,6 +5,7 @@
   }
   
   nav {
+    overflow-x: hidden;
     z-index: 10;
     display: flex;
     justify-content: space-around;
@@ -90,6 +91,7 @@
   @media screen and (max-width: 768px) {
     body {
       overflow-x: hidden;
+      position: relative;
     }
     .nav-linkss {
       position: absolute;
@@ -101,6 +103,7 @@
       align-items: center;
       width: 50%;
       transform: translateX(100%);
+      display: none;
     }
     .nav-links {
       position: absolute;
@@ -113,8 +116,11 @@
       width: 50%;
       transform: translateX(100%);
       z-index: 10;
+      display: none; /*display 추가하니까 디자인 적용 안됨*/
+      
     }
     .nav-links li {
+     
       opacity: 0;
     }
     .nav-linkss li {
@@ -125,7 +131,8 @@
     }
   
     .nav-active {
-      transform: translateX(0%);
+      transform: translateX(0%); 
+      display: block;  /*display 추가함*/
     }
     .logo{
       margin-left: 42%;
