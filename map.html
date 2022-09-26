@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>HelloWorldClass</title>
+    <style>
+      body {
+          overflow: hidden;
+      }
+      div#map {
+          width: 100vw; height: 100vh;
+      }
+      div.wrap {
+          width: 200px;
+      }
+      div.text-box {
+          text-align: center;
+      }
+      h4 {
+          margin: 10px auto 0;
+      }
+      div.img-box {
+          max-height: 100px;
+          overflow: hidden;
+      }
+      img {
+          width: 150px;
+          margin: -20px auto 0;
+      }
+      a {
+          text-decoration: none;
+          color: #000;
+      }
+      
+      
+      /* 확대/축소 등 구글 지도의 기본 UI 감추기 */
+      .gmnoprint, .gm-control-active.gm-fullscreen-control {
+          display: none;
+      }
+      
+  </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">	
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css">	
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
+          <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+          	  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+              <meta name="viewport" content="width=device-width, initial-scale=1">
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="headers.css" rel="stylesheet">
+  </head>
+  <body>
+    <div style="width: 100%; height: 10%; ">
+    <img OnClick="location.href ='index.html'" src="./images/helloworldclass.png" style = " width: 10%;">
+    <img src="./images/main5.png" style = " width: 30%; float: right; margin-top: 1.5%;">
+  </div>
+  <div style="width: 100%; height : 30px; ">
+<div style="margin-top: 0%; width: 8%; height: 30px; background-color: red; color: white; text-align: center; line-height: 30px; float: left;">홈</div>
+<div style="margin-top: 0%; width: 8%; height: 30px; background-color: blue; color: white; text-align: center; line-height: 30px; float: left;  margin-left: 3.5%;">공지사항</div>
+<div style="margin-top: 0%; width: 8%; height: 30px; background-color: green; color: white; text-align: center; line-height: 30px; float: left;  margin-left: 3.5%;">회사소개</div>
+<div OnClick="location.href ='application.html'" style="margin-top: 0%; width: 8%; height: 30px; background-color: orange; color: white; text-align: center; line-height: 30px; float: left;  margin-left: 3.5%;">강의</div>
+<div OnClick="location.href ='detail.html'" style="margin-top: 0%; width: 8%; height: 30px; background-color: purple; color: white; text-align: center; line-height: 30px; float: left;  margin-left: 3.5%;">강사</div>
+<div style="margin-top: 0%; width: 8%; height: 30px; background-color: rgb(39,189,226); color: white; text-align: center; line-height: 30px; float: left;  margin-left: 3.5%;">콘텐츠</div>
+<div style="margin-top: 0%; width: 8%; height: 30px; background-color: rgb(86,192,42); color: white; text-align: center; line-height: 30px; float: left;  margin-left: 3.5%;">문의하기</div>
+<div style="margin-top: 0%; width: 8%; height: 30px; background-color: rgb(76,159,56); color: white; text-align: center; line-height: 30px; float: left;  margin-left: 3.5%;">교육 기관</div>
+<div style="margin-top: 0%; width: 8%; height: 30px; background-color: rgb(220,166,58); color: white; text-align: center; line-height: 30px; float: left;  margin-left: 3.5%;">커뮤니티</div>
+</div>
+<div id="map"></div>
+  <div style="width: 100%; height : 0%;  border:2px solid rgb(217, 217, 217);"></div>
+ <div style="float : left" OnClick="location.href ='t-detail.html'">튀니지(클릭)</div>
+  
+      
+      <script type="text/javascript">
+        function initMap() {
+ 
+            //지도 스타일
+            var map = new google.maps.Map(document.getElementById('map'), {
+                
+                //처음 중심 좌표
+                center: {
+                    lat: 37.587624,
+                    lng: 126.976020
+                },
+                
+                //처음 줌 값. 숫자가 작을수록 낮은 배율
+                zoom: 3
+            });
+ 
+            //마커 정보
+            var locations = [
+                
+                //튀니지 마커
+                ['<div class="wrap"><div class="text-box"><h4>튀니지</h4><div class="img-box"><img src="./images/flag1.png"></div><a target="_blank" href="t-detail.html"><p>자세히 보기</p></a></div>', 36.84527787020169, 10.224256946189977],
+                
+                
+                //미국 마커
+                ['<div class="wrap"><div class="text-box"><h4>미국</h4><div class="img-box"><img src="./images/flag2.png"></div><a target="_blank" href="https://naver.com"><p>자세히 보기</p></a></div>', 38.89773472896015, -77.03658344594376],
+                
+                
+                //캐나다 마커
+                ['<div class="wrap"><div class="text-box"><h4>캐나다</h4><div class="img-box"><img src="./images/flag3.jpg"></div><a target="_blank" href="https://naver.com"><p>자세히 보기</p></a></div>', 45.31745113995196, -75.89366700815698],
+                
+                
+                ]
+ 
+            
+            
+            //마커 이미지
+            var customicon = './images/marker.png'
+ 
+            //인포윈도우
+            var infowindow = new google.maps.InfoWindow();
+ 
+            //마커 생성
+            var marker, i;
+            for (i = 0; i < locations.length; i++) {
+                marker = new google.maps.Marker({
+                    
+                    //마커의 위치
+                    position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                    
+                    //마커 아이콘
+                    icon: customicon,
+                    
+                    //마커를 표시할 지도
+                    map: map
+                });
+ 
+                google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                    return function() {
+                        
+                        //html로 표시될 인포 윈도우의 내용
+                        infowindow.setContent(locations[i][0]);
+                        
+                        //인포윈도우가 표시될 위치
+                        infowindow.open(map, marker);
+                    }
+                })(marker, i));
+                
+                if (marker) {
+                    marker.addListener('click', function() {
+                        
+                        //중심 위치를 클릭된 마커의 위치로 변경
+                     //   map.setCenter(this.getPosition());
+ 
+                        //마커 클릭 시의 줌 변화
+                      //  map.setZoom(14);
+                    });
+                }
+            }
+        }
+      </script>
+      <script src="https://maps.google.com/maps/api/js?key=AIzaSyCHuqX7bycgOwECFxJ-gHWHtkASOhOdXEA&callback=initMap" type="text/javascript" async defer></script>
+  </body>
+</html>

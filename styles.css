@@ -1,0 +1,242 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .menu {
+    /* 기본 스태틱에서는 좌표 적용이 안됨 */
+    position: absolute;
+    top: 50px;
+    left: 900px;
+    width: 200px;
+    height: 200px;
+    font-size: 30px;
+    background-color: palegreen;
+    color: blue;
+}
+.box{ margin: 15px; z-index: 10; }
+.box1{  position: fixed;
+    top: 100px;
+    right: 100px;
+    width: 160px;
+    height: 200px;
+    font-size: 17px;
+    z-index: 10;
+    border-radius: 30px; 
+  text-align: center;
+color: white;}
+.searchbar{
+  position: absolute;
+   top: 23%;
+    left: 30%; 
+    width: 30%; 
+    height: 30px;
+    line-height: 30px;
+    color: rgb(191,191,191);
+    background-color: rgb(230,230,230);
+    border-radius: 7px;
+}
+.searchbar1{
+  position: absolute;
+   top : 23%;
+    left: 58%; 
+    width: 8%; 
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgb(191,191,191);
+    border-radius: 7px;
+    color: #000000;
+}
+[placeholder]:empty:before {
+  display: block;
+  content: attr(placeholder);
+  color: #a6a6a6;
+}
+
+
+
+  nav {
+    overflow-x: hidden;
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* 요소의 최소 너비 지정, height 속성 무시
+      vh단위는 브라우저 안쪽 높이(window.innerHeight)을 기준으로
+      설정된다. 하지만 태블릿이나, 모바일의 경우에는 뷰 포트에 따라
+      맞춰짐*/
+    min-height: 8vh;
+    background-color: rgb(125,125,125);
+    font-family: "Poppins", sans-serif;
+    
+    flex-direction: column;
+  }
+  
+  .logo {
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    /* 각 글자 2px씩 간격을 줌*/
+    letter-spacing: 2px;
+    font-size: 18px;
+  }
+  
+  .nav-links {
+    width: 90%;
+    display: none;
+    justify-content: space-around;
+  }
+  .nav-linkss {
+    margin-top: 0.7%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav-links lil {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    list-style: none;
+  }
+  .nav-linkss li {
+    list-style: none;
+  }
+  .nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .nav-linkss a {
+    color: rgb(0,0,0);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .burger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .burger div {
+   
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .nav-links {
+      width: 90%;
+    }
+    .imgslide{
+      width:40%
+    }
+    .profile{
+      width:400px; 
+      margin-right: 1%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .box1{  display: none;}
+    body {
+      overflow-x: hidden;
+      position: relative;
+    }
+    .nav-linkss {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      height: 92vh;
+      background-color: aliceblue;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translateX(100%);
+      display: none;
+    }
+    .nav-links {
+      position: absolute;
+      top: 8.5vh;
+      right: 0;
+      height: 92vh;
+      background-color: aliceblue;
+      flex-direction: column;
+      align-items: center;
+     
+      width: 50%;
+      transform: translateX(100%);
+      z-index: 20;
+      
+      display: none; /*display 추가하니까 디자인 적용 안됨*/
+      
+    }
+    .nav-links li {
+     
+      opacity: 0;
+    }
+    .nav-linkss li {
+      opacity: 0;
+    }
+    .burger {
+      display: block;
+    }
+  
+    .nav-active {
+      transform: translateX(0%); 
+      align-items: center;
+      display: flex;
+     
+    }
+    .logo{
+      text-align: center;
+      
+    }
+    .logos{
+      text-align: center;
+      
+    }
+    .imgslide{
+      width:100%
+    }
+    .profile{
+      width:100px; 
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    .t1{
+      float: left;
+      font-size: 20px; /*이거 폰트 사이즈 작업중*/
+    }
+    @keyframes navLinkFade {
+      from {
+        opacity: 0;
+        transform: translateX(5px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+  
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .toggle .line2 {
+    opacity: 0;
+  }
+  
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
