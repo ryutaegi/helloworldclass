@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">	
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css">	
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
-          <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    /> 
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
           	  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
           
     <link
@@ -20,7 +24,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div style=" position : relative">
+    <div >
     <nav>
       <div style="width: 100%; background-color: rgb(125,125,125)">
         
@@ -43,10 +47,7 @@
         <li><a href="#">강사찾기</a></li>
         <li><a href="application.html">커뮤니티</a></li>
         <li><a href="detail.html">가이드</a></li>
-        <li><a href="#">콘텐츠</a></li>
-        <li><a href="#">문의하기</a></li>
-        <li><a href="#">교육기관</a></li>
-        <li><a href="#">커뮤니티</a></li>
+
       </ul>
       <div style="margin-left: 90%; position: fixed; margin-top: 0;" class="burger">
         <div class="line1"></div>
@@ -57,10 +58,10 @@
 
 
     <div id="m1" class="box1" style="background-color: white; color: black;">Home</div>
-    <div id="m2" class="box1" style="top: 150px; background-color: rgb(224, 30, 54);">강사 찾기
-      <img  src="./images/menu1.svg" style="width:65%; margin-top: 20px;"></div>
-    <div id="m3" class="box1" style="top: 200px; background-color: rgb(248, 157, 42)">커뮤니티
-      <img  src="./images/menu2.svg" style="width:60%; margin-top: 20px;"></div>
+    <div id="m2" class="box1" style="top: 150px; background-color: rgb(224, 30, 54);"><div>강사 찾기</div>
+      <img  src="./images/menu1.svg" style="width:120px; margin-top: 30px; margin-left : 10px; float: left;"></div>
+    <div id="m3" class="box1" style="top: 200px; background-color: rgb(248, 157, 42)"><div>커뮤니티</div>
+      <img  src="./images/menu2.svg" style="width:120px; margin-top: 40px; margin-left : 10px; float: left;"></div>
     <div id="m4" class="box1" style="top: 250px; background-color: rgb(20, 73, 107)">가이드
       <img  src="./images/menu3.svg" style="width:66%; margin-top: 25px;"></div>
     <div id="m4" class="box1" style="top: 425px; background-color: rgb(255, 255, 255); border-radius: 0px; height: 20px;"></div>
@@ -89,13 +90,13 @@
             <!-- 이미지의 개수만큼 item을 만든다. 중요한 포인트는 carousel-indicators의 li 태그 개수와 item의 개수는 일치해야 한다. -->
             <div OnClick="location.href ='application.html'" class="item active">
               <!-- 아미지 설정- -->
-              <img src="./images/main6.png" style="width:100%">
+              <img src="./images/mainslide1.png" style="width:100%">
               <!-- 캡션 설정 (생략 가능) -->
               <!-- 글자 색은 검은색 -->
               
             </div>
             <div OnClick="location.href ='map.html'" class="item">
-              <img  src="./images/main7.png" style="width:100%">
+              <img  src="./images/mainslide2.png" style="width:100%">
               
             </div>
           </div>
@@ -114,30 +115,293 @@
         </div>
       </div>
 
-      <div style="display: relative; ">
+      <div style=" position : relative;">
       <img  src="./images/main20.png" style="width:100%;">
       <div contenteditable placeholder='&nbsp;&nbsp;다양한 국가의 선생님들을 검색해보세요.' class="searchbar"></div>
       <div class="searchbar1">
       <img  src="./images/main21.svg" style="width:15%; margin-bottom: 2%; margin-right: 4%;">클래스 검색</div>
+      <div class="searchbar" style="margin-top: 4%; background-color: rgb(255, 255, 255); height: 0px;">
+        <img  src="./images/main23.png" style="width:100%; 
+         color: rgb(191,191,191);">
+       </div>
+    
     </div>
-    <div style="top : 85%;display: relative;">
-    <img  src="./images/main23.png" style="width:30%;  position: absolute;
-    top: 25%;
-     left: 30%; 
-     line-height: 30px;
-     color: rgb(191,191,191);
-     border-radius: 7px;">
-   </div>
+    
     <div style="position: relative;">
-      <img  src="./images/main22.png" style="width:100%;"></div>
-      <img OnClick="location.href ='application.html'"  src="./images/main24.png" style="width:30%;  position: absolute;
-      top: 95%;
+      <img  src="./images/main22.png" style="width:100%;">
+      <img OnClick="location.href ='application.html'"  src="./images/main24.png" style="
+      width:30%;  position: absolute;
+      top: 90%;
        left: 35%; 
        line-height: 30px;
        color: rgb(191,191,191);
-       border-radius: 7px;"></div>
+       border-radius: 7px;">
+       
+      
     </div>
+<div style="text-align: center; border: 1px solid aliceblue; position: relative; height: 1000px; background-color: aliceblue;">
+<div >
+  <div style="float : left; width:500px; height: 30px;margin-left: 20%; margin-top: 100px; font-size: 30px;">
+  | 친절한 강사와 함께하는
   </div>
+  <div style = "float : right;  height: 60px; line-height: 60px; margin-right: 24%; margin-top: 140px;">
+     더보기 >
+    </div>
+    <div style="float: left;  width:800px; height: 60px; margin-left: 10%; margin-top: 15px; font-size: 35px; font-weight: bolder;">
+       유튜브클래스
+      </div>
+</div>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" >
+          <img src="./images/slide1.png" >
+          <div class="slidemenu">
+            학생들이 들려주는 후기
+          </div>
+          </div>
+          <div class="swiper-slide" >
+            <img src="./images/slide1.png" >
+            <div class="slidemenu">
+              튀니지 강사의 브이로그
+            </div>
+            </div>
+            <div class="swiper-slide" >
+              <img src="./images/slide1.png" >
+              <div class="slidemenu">
+                강사 등록 방법
+              </div>
+              </div>
+              <div class="swiper-slide" >
+          <img src="./images/slide1.png" >
+          <div class="slidemenu">
+            슬라이드 4
+          </div>
+          </div>
+          <div class="swiper-slide" >
+          <img src="./images/slide1.png" >
+          <div class="slidemenu">
+            슬라이드 5
+          </div>
+          </div>
+          <div class="swiper-slide" >
+          <img src="./images/slide1.png" >
+          <div class="slidemenu">
+            슬라이드 6
+          </div>
+          </div>
+          <div class="swiper-slide" >
+          <img src="./images/slide1.png" >
+          <div class="slidemenu">
+            슬라이드 7
+          </div>
+          </div>
+          <div class="swiper-slide" >
+          <img src="./images/slide1.png" >
+          <div class="slidemenu">
+            슬라이드 8
+          </div>
+          </div>
+          <div class="swiper-slide" >
+          <img src="./images/slide1.png" >
+          <div class="slidemenu">
+            슬라이드 9
+          </div>
+          </div>
+
+      
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+</div>
+<div style="display: inline-block; border-radius: 10px 10px 0px 0px; background-color: rgb(242,242,242); width:1000px; height: 340px; margin-top: 15px;">
+  <div style="border-radius: 10px 10px 0px 0px; float: left; background-color: rgb(217,217,217); width:1000px; height: 30px;">
+<div style=" float: left; margin : 4px; border-radius:50%; background-color: rgb(244,30,54); border:1px solid rgb(150,150,150); width: 20px; height: 20px;"></div>
+<div style=" float: left; margin : 4px; border-radius:50%; background-color: rgb(255,192,0); border:1px solid rgb(150,150,150); width: 20px; height: 20px;"></div>
+<div style=" float: left; margin : 4px; border-radius:50%; background-color: rgb(0, 176,80); border:1px solid rgb(150,150,150); width: 20px; height: 20px;"></div>
+<div style="float: right; line-height: 30px; margin-right: 10px; font-weight: bold;">후기 더보기 ></div> 
+</div>
+  <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 50px">
+    <img src="./images/pro1.png" style = " width: 50px; float : left">
+    <div style="text-align : left; margin-left: 70px; font-weight: bold; margin-top: 3px;">강사 | 보슈라 엘 갈리 | 튀니지</div>
+    <div style="text-align : left; margin-left: 70px;">동대문중학교 학생들과 함께 튀니지의 문화와 ...</div>
+  </div>
+  <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 50px">
+    <img src="./images/pro2.png" style = " width: 50px; float : left">
+    <div style="text-align : left; margin-left: 70px; font-weight: bold; margin-top: 3px;">강사 | 케빈 | 미국</div>
+    <div style="text-align : left; margin-left: 70px;">게임을 통해서 배재중학교 학생들과세계시민교육 ...</div>
+  </div>
+  <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 50px">
+    <img src="./images/pro3.png" style = " width: 50px; float : left">
+    <div style="text-align : left; margin-left: 70px; font-weight: bold; margin-top: 3px;">교사 | 안은영 | 보성중</div>
+    <div style="text-align : left; margin-left: 70px;">프랑스에서 오신 강사님들 덕분에 학생들이 ...</div>
+  </div>
+  <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 50px">
+    <img src="./images/pro1.png" style = " width: 50px; float : left">
+    <div style="text-align : left; margin-left: 70px; font-weight: bold; margin-top: 3px;">학생 | 장현웅 | 배재고</div>
+    <div style="text-align : left; margin-left: 70px;">프랑스에서 오신 강사님들 덕분에 세계시민교육에 대하여 ...</div>
+  </div>
+</div>
+  </div>
+
+
+  <div style="text-align: center; border: 1px solid aliceblue; position: relative; height: 1000px; background-color: aliceblue;">
+    <div >
+      <div style="float : left; width:500px; height: 30px;margin-left: 16.8%; margin-top: 100px; font-size: 30px;">
+      | 인기 강사 추천
+      </div>
+      <div style = "float : right;  height: 60px; line-height: 60px; margin-right: 24%; margin-top: 140px;">
+         강사 더보기 >
+        </div>
+        <div style="float: left;  width:800px; height: 60px; margin-left: 10%; margin-top: 15px; font-size: 35px; font-weight: bolder;">
+           이번달 클래스
+          </div>
+    </div>
+    
+        <!-- Swiper -->
+        <div class="swiper mySwiper" style="height:660px">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" >
+              <div class="slidemenu2" style="text-align: center;">
+                <div style="display: inline-block; height: 330px; width : 280px; background-color: white; margin-top: 60px;">
+                </div>
+                <div style="float: left; background-color: white; width: 80px; height:55px; margin-top: 10px; margin-left: 20px;">
+                </div>
+                <div style="float : left; color : black; margin-top : 22px; margin-left : 17px">
+                  미국
+                </div>
+                <div style="text-align: center; margin-top: 85px; margin-left: 50px; width:200px; height: 90px; line-height: 90px; font-size: 35px; font-weight: bolder; color: black;">
+                  케빈
+                </div>
+              </div>
+              </div>
+              <div class="swiper-slide" >
+                <div class="slidemenu2" style="text-align: center;">
+                  <div style="display: inline-block; height: 330px; width : 280px; background-color: white; margin-top: 60px;">
+                  </div>
+                  <div style="float: left; background-color: white; width: 80px; height:55px; margin-top: 10px; margin-left: 20px;">
+                  </div>
+                  <div style="float : left; color : black; margin-top : 22px; margin-left : 17px">
+                    튀니지
+                  </div>
+                  <div style="text-align: center; margin-top: 85px; margin-left: 50px; width:200px; height: 90px; line-height: 90px; font-size: 30px; font-weight: bolder; color: black;">
+                    보슈라 엘 갈리
+                  </div>
+                </div>
+                </div>
+                <div class="swiper-slide" >
+                  <div class="slidemenu2" style="text-align: center;">
+                    <div style="display: inline-block; height: 330px; width : 280px; background-color: white; margin-top: 60px;">
+                    </div>
+                    <div style="float: left; background-color: white; width: 80px; height:55px; margin-top: 10px; margin-left: 20px;">
+                    </div>
+                    <div style="float : left; color : black; margin-top : 22px; margin-left : 17px">
+                      미국
+                    </div>
+                    <div style="text-align: center; margin-top: 85px; margin-left: 50px; width:200px; height: 90px; line-height: 90px; font-size: 30px; font-weight: bolder; color: black;">
+                      알렉산드리아
+                    </div>
+                  </div>
+                  </div>
+                  <div class="swiper-slide" >
+                    <div class="slidemenu2" style="text-align: center;">
+                      <div style="display: inline-block; height: 330px; width : 280px; background-color: white; margin-top: 60px;">
+                      </div>
+                      <div style="float: left; background-color: white; width: 80px; height:55px; margin-top: 10px; margin-left: 20px;">
+                      </div>
+                      <div style="float : left; color : black; margin-top : 22px; margin-left : 17px">
+                        미국
+                      </div>
+                      <div style="text-align: center; margin-top: 85px; margin-left: 50px; width:200px; height: 90px; line-height: 90px; font-size: 30px; font-weight: bolder; color: black;">
+                        오비완 케노비
+                      </div>
+                    </div>
+                    </div>
+                    <div class="swiper-slide" >
+                      <div class="slidemenu2" style="text-align: center;">
+                        <div style="display: inline-block; height: 330px; width : 280px; background-color: white; margin-top: 60px;">
+                        </div>
+                        <div style="float: left; background-color: white; width: 80px; height:55px; margin-top: 10px; margin-left: 20px;">
+                        </div>
+                        <div style="float : left; color : black; margin-top : 22px; margin-left : 17px">
+                          미국
+                        </div>
+                        <div style="text-align: center; margin-top: 85px; margin-left: 50px; width:200px; height: 90px; line-height: 90px; font-size: 25px; font-weight: bolder; color: black;">
+                          루크 스카이워커
+                        </div>
+                      </div>
+                      </div>
+                      <div class="swiper-slide" >
+                        <div class="slidemenu2" style="text-align: center;">
+                          <div style="display: inline-block; height: 330px; width : 280px; background-color: white; margin-top: 60px;">
+                          </div>
+                          <div style="float: left; background-color: white; width: 80px; height:55px; margin-top: 10px; margin-left: 20px;">
+                          </div>
+                          <div style="float : left; color : black; margin-top : 22px; margin-left : 17px">
+                            미국
+                          </div>
+                          <div style="text-align: center; margin-top: 85px; margin-left: 50px; width:200px; height: 90px; line-height: 90px; font-size: 35px; font-weight: bolder; color: black;">
+                            한 솔로
+                          </div>
+                        </div>
+                        </div>
+                        <div class="swiper-slide" >
+                          <div class="slidemenu2" style="text-align: center;">
+                            <div style="display: inline-block; height: 330px; width : 280px; background-color: white; margin-top: 60px;">
+                            </div>
+                            <div style="float: left; background-color: white; width: 80px; height:55px; margin-top: 10px; margin-left: 20px;">
+                            </div>
+                            <div style="float : left; color : black; margin-top : 22px; margin-left : 17px">
+                              미국
+                            </div>
+                            <div style="text-align: center; margin-top: 85px; margin-left: 50px; width:200px; height: 90px; line-height: 90px; font-size: 35px; font-weight: bolder; color: black;">
+                              요다
+                            </div>
+                          </div>
+                          </div>
+                          <div class="swiper-slide" >
+                            <div class="slidemenu2" style="text-align: center;">
+                              <div style="display: inline-block; height: 330px; width : 280px; background-color: white; margin-top: 60px;">
+                              </div>
+                              <div style="float: left; background-color: white; width: 80px; height:55px; margin-top: 10px; margin-left: 20px;">
+                              </div>
+                              <div style="float : left; color : black; margin-top : 22px; margin-left : 17px">
+                                미국
+                              </div>
+                              <div style="text-align: center; margin-top: 85px; margin-left: 50px; width:200px; height: 90px; line-height: 90px; font-size: 35px; font-weight: bolder; color: black;">
+                                R2-D2
+                              </div>
+                            </div>
+                            </div>
+                            <div class="swiper-slide" >
+                              <div class="slidemenu2" style="text-align: center;">
+                                <div style="display: inline-block; height: 330px; width : 280px; background-color: white; margin-top: 60px;">
+                                </div>
+                                <div style="float: left; background-color: white; width: 80px; height:55px; margin-top: 10px; margin-left: 20px;">
+                                </div>
+                                <div style="float : left; color : black; margin-top : 22px; margin-left : 17px">
+                                  미국
+                                </div>
+                                <div style="text-align: center; margin-top: 85px; margin-left: 50px; width:200px; height: 90px; line-height: 90px; font-size: 35px; font-weight: bolder; color: black;">
+                                  다스 베이더
+                                </div>
+                              </div>
+                              </div>
+                        
+
+        
+            
+    
+          
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+    </div>
+   
+      </div>
 
 
 
@@ -146,8 +410,130 @@
 
 </div>
 
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3 text-secondary"></i>Company name
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3 text-secondary"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <div style="float : left; width: 90%; height : 10px; background-color :rgb(224, 30, 54)">  </div>
+  <div style="float : left; width: 5%; height : 10px; background-color : rgb(248, 157, 42)">  </div>
+  <div style="float : left;width: 5%; height : 10px; background-color :rgb(20, 73,170)">  </div>
+
+</footer>
+<!-- Footer -->
 
 
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
 
@@ -239,24 +625,40 @@ $(function(){
    
     div2.addEventListener("mouseover", function (e) {
       gsap.to("#m2", {
-      x: -170
+       width : 300
     });
   });
     div2.addEventListener("mouseout", function (e) {
       gsap.to("#m2", {
-      x: 0
+       width : 160
     });
   });
     div3.addEventListener("mouseover", function (e) {
       gsap.to("#m3", {
-      x: -170
+        width : 300
     });
   });
     div3.addEventListener("mouseout", function (e) {
       gsap.to("#m3", {
-      x: 0
+        width : 160
     });
   });
 
+
+  var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
   </script>
 </html>

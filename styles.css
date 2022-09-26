@@ -30,8 +30,9 @@ color: white;}
    top: 23%;
     left: 30%; 
     width: 30%; 
-    height: 30px;
-    line-height: 30px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
     color: rgb(191,191,191);
     background-color: rgb(230,230,230);
     border-radius: 7px;
@@ -41,9 +42,11 @@ color: white;}
    top : 23%;
     left: 58%; 
     width: 8%; 
-    height: 30px;
-    line-height: 30px;
+    height: 60px;
+    line-height: 60px;
     text-align: center;
+    font-size: 18px;
+    font-weight: bold;
     background-color: rgb(191,191,191);
     border-radius: 7px;
     color: #000000;
@@ -53,7 +56,57 @@ color: white;}
   content: attr(placeholder);
   color: #a6a6a6;
 }
+ /* 여기부터 슬라이드 스타일시트*/
+ .swiper {
+  width: 1000px;
+  height: 350px;
+  
+}
 
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: block;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.slidemenu{
+  color: #fff;
+   height: 32px;
+    text-align: center;
+     line-height: 35px;
+      border-radius: 7px;
+       background-color: rgb(166, 166, 166);
+        margin-top: 10px;
+}
+.slidemenu2{
+  color: #fff;
+   height: 600px;
+    text-align: center;
+     line-height: 35px;
+      border-radius: 50px;
+       background-color: rgb(242,242,242);
+        margin-top: 10px;
+}
 
 
   nav {
