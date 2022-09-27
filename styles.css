@@ -17,7 +17,7 @@
 .box{ margin: 15px; z-index: 10; }
 .box1{  position: fixed;
     top: 100px;
-    right: 100px;
+    right: 5%;
     width: 160px;
     height: 200px;
     font-size: 17px;
@@ -110,7 +110,8 @@ color: white;}
 
 
   nav {
-    overflow-x: hidden;
+    
+    
     z-index: 10;
     display: flex;
     justify-content: space-around;
@@ -120,10 +121,13 @@ color: white;}
       설정된다. 하지만 태블릿이나, 모바일의 경우에는 뷰 포트에 따라
       맞춰짐*/
     min-height: 8vh;
-    background-color: rgb(125,125,125);
     font-family: "Poppins", sans-serif;
     
     flex-direction: column;
+     width: 100%; 
+     position: absolute;
+      z-index: 20;
+     top: 0px
   }
   
   .logo {
@@ -135,6 +139,7 @@ color: white;}
   }
   
   .nav-links {
+    height: 100%;
     width: 90%;
     display: none;
     justify-content: space-around;
@@ -185,7 +190,26 @@ color: white;}
     margin: 5px;
     transition: all 0.3s ease;
   }
-  
+  .footericon{
+    margin-top: 0px;
+  }
+  /*유튜브 클래스*/
+  .youtubeclass{
+    display: inline-block;
+     border-radius: 10px 10px 0px 0px;
+      background-color: rgb(242,242,242);
+       width:1000px;
+        height: 340px;
+        margin-top: 15px;
+  }
+
+  .inclass{
+    text-align: center;
+     border: 1px solid aliceblue;
+      position: relative;
+       height: 1000px;
+        background-color: aliceblue;
+  }
   @media screen and (max-width: 1024px) {
     .nav-links {
       width: 90%;
@@ -200,6 +224,16 @@ color: white;}
   }
   
   @media screen and (max-width: 768px) {
+    .nav{
+      
+      width: 100%; 
+      position: absolute;
+       z-index: 20;
+       height: 100%;
+    }
+    .footericon{
+      margin-top: 30px;
+    }
     .box1{  display: none;}
     body {
       overflow-x: hidden;
@@ -218,10 +252,10 @@ color: white;}
       display: none;
     }
     .nav-links {
-      position: absolute;
-      top: 8.5vh;
+      position: fixed;
+      top: 0;
       right: 0;
-      height: 92vh;
+      height: 100%;
       background-color: aliceblue;
       flex-direction: column;
       align-items: center;
@@ -268,7 +302,7 @@ color: white;}
     }
     .t1{
       float: left;
-      font-size: 20px; /*이거 폰트 사이즈 작업중*/
+      font-size: 20px; 
     }
     @keyframes navLinkFade {
       from {
@@ -280,6 +314,75 @@ color: white;}
         transform: translateX(0);
       }
     }
+
+    .youtubeclass{
+      display: inline-block;
+       border-radius: 10px 10px 0px 0px;
+        background-color: rgb(242,242,242);
+         width:100%;
+          height: 340px;
+          margin-top: 15px;
+    }
+
+    .inclass{
+      text-align: center;
+       border: 1px solid aliceblue;
+        position: relative;
+         height: 1000px;
+          background-color: aliceblue;
+    }
+     /* 여기부터 슬라이드 스타일시트*/
+ .swiper {
+  width: 100%;
+  height: 350px;
+  
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: block;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.slidemenu{
+  color: #fff;
+   height: 32px;
+    text-align: center;
+     line-height: 35px;
+      border-radius: 7px;
+       background-color: rgb(166, 166, 166);
+        margin-top: 10px;
+}
+.slidemenu2{
+  color: #fff;
+   height: 600px;
+    text-align: center;
+     line-height: 35px;
+      border-radius: 50px;
+       background-color: rgb(242,242,242);
+        margin-top: 10px;
+}
+
   }
   
   .toggle .line1 {

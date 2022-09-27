@@ -16,6 +16,7 @@
     /> 
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
           	  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+              <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
           
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
@@ -25,17 +26,18 @@
   </head>
   <body>
     <div >
-    <nav>
-      <div style="width: 100%; background-color: rgb(125,125,125)">
+    <nav >
+      <div style="width: 100%; right: 0px;">
         
         <div class="logo" style="flex-direction: row;">
   
-        <img class="logos" src="./images/helloworldclass.png" style="width: 100px; ">
+         
+        <img class="logos" src="./images/helloworldclass.png" style="width: 100px; margin-top: 9px; margin-left: 15px;">
         <ul class="nav-linkss" style="float: right;">
-          <li><a href="#">언어 | Language</a></li>
-          <li><img  src="./images/main2.png" style="width: 150px;"></li>
-          <li><a href="#">강사 교육 연계 플랫폼</a></li>
-          <li><a href="#">로그인</a></li>
+          <li style="margin-right: 60px; float: left;margin-top: 7px;"><a href="#">교실과 세계를 잇는 헬로우월드 클래스</a></li>
+          <li style="margin-right: 40px;margin-top: 7px;"><a href="#">언어 | Language</a></li>
+          <li style="margin-right: 40px; margin-top: 7px;"><a href="#">홈</a></li>
+          <li style="margin-right: 40px; background-color: white; border-radius: 30px; border:7px solid white; "><a href="#">&nbsp&nbsp&nbsp로그인&nbsp&nbsp&nbsp</a></li>
         </ul>
           </div>
           
@@ -49,7 +51,7 @@
         <li><a href="detail.html">가이드</a></li>
 
       </ul>
-      <div style="margin-left: 90%; position: fixed; margin-top: 0;" class="burger">
+      <div style="z-index: 30; margin-left: 90%; position: fixed; margin-top: 0;" class="burger">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
@@ -71,7 +73,7 @@
 
 
       <!-- carousel를 구성할 영역 설정 -->
-      <div style="width: 100%px; ">
+      <div style="width: 100%;">
         <!-- carousel를 사용하기 위해서는 class에 carousel와 slide 설정한다. -->
         <!-- carousel는 특이하게 id를 설정해야 한다.-->
         <div id="carousel-example-generic" class="carousel slide" >
@@ -88,14 +90,14 @@
           <!-- class는 carousel-inner로 설정하고 role은 listbox에서 설정한다. -->
           <div class="carousel-inner" role="listbox">
             <!-- 이미지의 개수만큼 item을 만든다. 중요한 포인트는 carousel-indicators의 li 태그 개수와 item의 개수는 일치해야 한다. -->
-            <div OnClick="location.href ='application.html'" class="item active">
+            <div OnClick="location.href =''" class="item active">
               <!-- 아미지 설정- -->
               <img src="./images/mainslide1.png" style="width:100%">
               <!-- 캡션 설정 (생략 가능) -->
               <!-- 글자 색은 검은색 -->
               
             </div>
-            <div OnClick="location.href ='map.html'" class="item">
+            <div OnClick="location.href =''" class="item">
               <img  src="./images/mainslide2.png" style="width:100%">
               
             </div>
@@ -216,7 +218,7 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
 </div>
-<div style="display: inline-block; border-radius: 10px 10px 0px 0px; background-color: rgb(242,242,242); width:1000px; height: 340px; margin-top: 15px;">
+<div class = "youtubeclass">
   <div style="border-radius: 10px 10px 0px 0px; float: left; background-color: rgb(217,217,217); width:1000px; height: 30px;">
 <div style=" float: left; margin : 4px; border-radius:50%; background-color: rgb(244,30,54); border:1px solid rgb(150,150,150); width: 20px; height: 20px;"></div>
 <div style=" float: left; margin : 4px; border-radius:50%; background-color: rgb(255,192,0); border:1px solid rgb(150,150,150); width: 20px; height: 20px;"></div>
@@ -247,7 +249,7 @@
   </div>
 
 
-  <div style="text-align: center; border: 1px solid aliceblue; position: relative; height: 1000px; background-color: aliceblue;">
+  <div class = "inclass" >
     <div >
       <div style="float : left; width:500px; height: 30px;margin-left: 16.8%; margin-top: 100px; font-size: 30px;">
       | 인기 강사 추천
@@ -265,7 +267,7 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide" >
               <div class="slidemenu2" style="text-align: center;">
-                <div style="display: inline-block; height: 330px; width : 280px; background-color: white; margin-top: 60px;">
+                <div style="display: inline-block; height: 330px; width :80%; background-color: white; margin-top: 60px;">
                 </div>
                 <div style="float: left; background-color: white; width: 80px; height:55px; margin-top: 10px; margin-left: 20px;">
                 </div>
@@ -279,7 +281,7 @@
               </div>
               <div class="swiper-slide" >
                 <div class="slidemenu2" style="text-align: center;">
-                  <div style="display: inline-block; height: 330px; width : 280px; background-color: white; margin-top: 60px;">
+                  <div style="display: inline-block; height: 330px; width :80%; background-color: white; margin-top: 60px;">
                   </div>
                   <div style="float: left; background-color: white; width: 80px; height:55px; margin-top: 10px; margin-left: 20px;">
                   </div>
@@ -293,7 +295,7 @@
                 </div>
                 <div class="swiper-slide" >
                   <div class="slidemenu2" style="text-align: center;">
-                    <div style="display: inline-block; height: 330px; width : 280px; background-color: white; margin-top: 60px;">
+                    <div style="display: inline-block; height: 330px; width :80%; background-color: white; margin-top: 60px;">
                     </div>
                     <div style="float: left; background-color: white; width: 80px; height:55px; margin-top: 10px; margin-left: 20px;">
                     </div>
@@ -415,32 +417,11 @@
   <!-- Section: Social media -->
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     <!-- Left -->
-    <div class="me-5 d-none d-lg-block">
-      <span>Get connected with us on social networks:</span>
-    </div>
+
     <!-- Left -->
 
     <!-- Right -->
-    <div>
-      <a href="" class="me-4 link-secondary">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="" class="me-4 link-secondary">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="" class="me-4 link-secondary">
-        <i class="fab fa-google"></i>
-      </a>
-      <a href="" class="me-4 link-secondary">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="" class="me-4 link-secondary">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="" class="me-4 link-secondary">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
+
     <!-- Right -->
   </section>
   <!-- Section: Social media -->
@@ -453,12 +434,14 @@
         <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3 text-secondary"></i>Company name
+          <h6 class="text-uppercase fw-bold mb-4" style="color: black;">헬로우월드클래스
           </h6>
           <p>
-            Here you can use rows and columns to organize your footer content. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit.
+             대표이사 : 000<br>
+               개인정보 책임 관리자 : 000<br>
+            사업자등록번호 : 0000000000000000000 <br>
+             통신판매업신고증 : 0000000000000000000 <br>
+            직업정보제공사업 신고번호 :000000000000000<br>
           </p>
         </div>
         <!-- Grid column -->
@@ -467,19 +450,19 @@
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">
-            Products
+            소개
           </h6>
           <p>
-            <a href="#!" class="text-reset">Angular</a>
+            <a href="#!" class="text-reset">헬로우월드클래스</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">React</a>
+            <a href="#!" class="text-reset">이용약관</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Vue</a>
+            <a href="#!" class="text-reset">개인정보 처리방침</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Laravel</a>
+            <a href="#!" class="text-reset">사업자 정보 확인</a>
           </p>
         </div>
         <!-- Grid column -->
@@ -488,19 +471,16 @@
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">
-            Useful links
+            고객센터
           </h6>
           <p>
-            <a href="#!" class="text-reset">Pricing</a>
+            <a href="#!" class="text-reset">이용안내</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Settings</a>
+            <a href="#!" class="text-reset">공지사항</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Orders</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Help</a>
+            <a href="#!" class="text-reset">자주묻는 질문</a>
           </p>
         </div>
         <!-- Grid column -->
@@ -509,15 +489,36 @@
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-          <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+          <p><i class="fas fa-home me-3 text-secondary"></i> 주소 : 00000000000000000000000000</p>
           <p>
             <i class="fas fa-envelope me-3 text-secondary"></i>
-            info@example.com
+            이메일 : 0000000000000@0000000
           </p>
-          <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
-          <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+          <p><i class="fas fa-phone me-3 text-secondary"></i> 012-345-6789<br>
+          평일 10 : 00 ~ 18 : 00<br>
+        (점심시간 12 : 00~ 13:00제외, 주말 공휴일 제외)</p>
         </div>
+       
         <!-- Grid column -->
+      </div>
+      <div class="footericon">
+        <a href="" class="me-4 link-secondary" style="height: 200px; width : 300px">
+          <i class="fab fa-facebook-f" style="height : 40px; width : 40px; margin-right: 20px;">
+          </i></a>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-twitter" style="height : 40px; width : 40px; margin-right: 20px;"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-google" style="height : 40px; width : 40px; margin-right: 20px;"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-instagram" style="height : 40px; width : 40px; margin-right: 20px;"></i>
+        </a>
+      </div>
+      <div style="margin-top: 30px; margin-bottom: 30px;">
+        
+        <img class="logos" src="./images/helloworldclass.png" style="width: 150px; ">
       </div>
       <!-- Grid row -->
     </div>
