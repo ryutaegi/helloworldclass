@@ -25,19 +25,16 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div >
+    <div style="overflow: hidden;">
     <nav >
       <div style="width: 100%; right: 0px;">
         
         <div class="logo" style="flex-direction: row;">
   
          
-        <img class="logos" src="./images/helloworldclass.png" style="width: 100px; margin-top: 9px; margin-left: 15px;">
+        <img class="logoss" src="./images/helloworldclass.png">
         <ul class="nav-linkss" style="float: right;">
-          <li style="margin-right: 60px; float: left;margin-top: 7px;"><a href="#">교실과 세계를 잇는 헬로우월드 클래스</a></li>
-          <li style="margin-right: 40px;margin-top: 7px;"><a href="#">언어 | Language</a></li>
-          <li style="margin-right: 40px; margin-top: 7px;"><a href="#">홈</a></li>
-          <li style="margin-right: 40px; background-color: white; border-radius: 30px; border:7px solid white; "><a href="#">&nbsp&nbsp&nbsp로그인&nbsp&nbsp&nbsp</a></li>
+          <li style="margin-right: 40px; background-color: white; border-radius: 10px; border:7px solid white; "><a href="#">&nbsp&nbsp&nbsp로그인&nbsp&nbsp&nbsp</a></li>
         </ul>
           </div>
           
@@ -64,10 +61,9 @@
       <img  src="./images/menu1.svg" style="width:120px; margin-top: 30px; margin-left : 10px; float: left;"></div>
     <div id="m3" class="box1" style="top: 200px; background-color: rgb(248, 157, 42)"><div>커뮤니티</div>
       <img  src="./images/menu2.svg" style="width:120px; margin-top: 40px; margin-left : 10px; float: left;"></div>
-    <div id="m4" class="box1" style="top: 250px; background-color: rgb(20, 73, 107)">가이드
-      <img  src="./images/menu3.svg" style="width:66%; margin-top: 25px;"></div>
-    <div id="m4" class="box1" style="top: 425px; background-color: rgb(255, 255, 255); border-radius: 0px; height: 20px;"></div>
-    <div id="m4" class="box1" style="top: 430px; background-color: rgb(255, 255, 255);height: 30px;"></div>
+    <div id="m4" class="box1" style="top: 250px; background-color: rgb(20, 73, 107)"><div>가이드</div>
+      <img  src="./images/menu3.svg" style="width:120px; text-align: center; margin-top: 25px;"></div>
+ 
 
 
 
@@ -85,6 +81,13 @@
             <!-- 딱히 이 부분은 옵션별로 설정하게 없다. -->
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="8"></li>
           </ol>
           <!-- 실제 이미지 아이템 -->
           <!-- class는 carousel-inner로 설정하고 role은 listbox에서 설정한다. -->
@@ -92,14 +95,41 @@
             <!-- 이미지의 개수만큼 item을 만든다. 중요한 포인트는 carousel-indicators의 li 태그 개수와 item의 개수는 일치해야 한다. -->
             <div OnClick="location.href =''" class="item active">
               <!-- 아미지 설정- -->
-              <img src="./images/mainslide1.png" style="width:100%">
+              <img src="./images/배너/1.png" style="width:100%">
               <!-- 캡션 설정 (생략 가능) -->
               <!-- 글자 색은 검은색 -->
               
             </div>
             <div OnClick="location.href =''" class="item">
-              <img  src="./images/mainslide2.png" style="width:100%">
+              <img  src="./images/배너/2.jpg" style="width:100%">
               
+            </div>
+            <div OnClick="location.href =''" class="item">
+              <img  src="./images/배너/3.jpg" style="width:100%">
+              
+            </div>
+            <div OnClick="location.href =''" class="item">
+              <img  src="./images/배너/4.jpg" style="width:100%">
+              
+            </div>
+            <div OnClick="location.href =''" class="item">
+              <img  src="./images/배너/5.jpg" style="width:100%">
+            </div>
+
+            <div OnClick="location.href =''" class="item">
+              <img  src="./images/배너/6.jpg" style="width:100%">
+            </div>
+
+            <div OnClick="location.href =''" class="item">
+              <img  src="./images/배너/7.jpg" style="width:100%">
+            </div>
+
+            <div OnClick="location.href =''" class="item">
+              <img  src="./images/배너/8.jpg" style="width:100%">
+            </div>
+
+            <div OnClick="location.href =''" class="item">
+              <img  src="./images/배너/9.jpg" style="width:100%">
             </div>
           </div>
           <!-- 왼쪽 화살표 버튼 -->
@@ -142,37 +172,41 @@
       
     </div>
 <div style="text-align: center; border: 1px solid aliceblue; position: relative; height: 1000px; background-color: aliceblue;">
-<div >
-  <div style="float : left; width:500px; height: 30px;margin-left: 20%; margin-top: 100px; font-size: 30px;">
+<div style="width: 1000px; height: 180px; ">
+
+</div>
+  <div class="youdiv">
+  <div class="youfont1">
   | 친절한 강사와 함께하는
   </div>
-  <div style = "float : right;  height: 60px; line-height: 60px; margin-right: 24%; margin-top: 140px;">
-     더보기 >
-    </div>
-    <div style="float: left;  width:800px; height: 60px; margin-left: 10%; margin-top: 15px; font-size: 35px; font-weight: bolder;">
+  
+    <div class="youfont3">
        유튜브클래스
       </div>
+      <div class="youfont2">
+        더보기 >
+       </div>
 </div>
 
     <!-- Swiper -->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide" >
-          <img src="./images/slide1.png" >
+          <img src="./images/썸네일/2_학생.png" >
           <div class="slidemenu">
             학생들이 들려주는 후기
           </div>
           </div>
           <div class="swiper-slide" >
-            <img src="./images/slide1.png" >
+            <img src="./images/썸네일/1_노라.png" >
             <div class="slidemenu">
-              튀니지 강사의 브이로그
+              노라쌤의 브이로그
             </div>
             </div>
             <div class="swiper-slide" >
-              <img src="./images/slide1.png" >
+              <img src="./images/썸네일/3_예진.png" >
               <div class="slidemenu">
-                강사 등록 방법
+                예진쌤의 브이로그
               </div>
               </div>
               <div class="swiper-slide" >
@@ -219,28 +253,25 @@
       <div class="swiper-pagination"></div>
 </div>
 <div class = "youtubeclass">
-  <div style="border-radius: 10px 10px 0px 0px; float: left; background-color: rgb(217,217,217); width:1000px; height: 30px;">
-<div style=" float: left; margin : 4px; border-radius:50%; background-color: rgb(244,30,54); border:1px solid rgb(150,150,150); width: 20px; height: 20px;"></div>
-<div style=" float: left; margin : 4px; border-radius:50%; background-color: rgb(255,192,0); border:1px solid rgb(150,150,150); width: 20px; height: 20px;"></div>
-<div style=" float: left; margin : 4px; border-radius:50%; background-color: rgb(0, 176,80); border:1px solid rgb(150,150,150); width: 20px; height: 20px;"></div>
+  <div style="border-radius: 10px 10px 0px 0px; float: left; background-color: rgb(217,217,217); width:100%; height: 30px;">
 <div style="float: right; line-height: 30px; margin-right: 10px; font-weight: bold;">후기 더보기 ></div> 
 </div>
-  <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 50px">
+  <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 5%">
     <img src="./images/pro1.png" style = " width: 50px; float : left">
     <div style="text-align : left; margin-left: 70px; font-weight: bold; margin-top: 3px;">강사 | 보슈라 엘 갈리 | 튀니지</div>
     <div style="text-align : left; margin-left: 70px;">동대문중학교 학생들과 함께 튀니지의 문화와 ...</div>
   </div>
-  <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 50px">
+  <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 5%">
     <img src="./images/pro2.png" style = " width: 50px; float : left">
     <div style="text-align : left; margin-left: 70px; font-weight: bold; margin-top: 3px;">강사 | 케빈 | 미국</div>
     <div style="text-align : left; margin-left: 70px;">게임을 통해서 배재중학교 학생들과세계시민교육 ...</div>
   </div>
-  <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 50px">
+  <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 5%">
     <img src="./images/pro3.png" style = " width: 50px; float : left">
     <div style="text-align : left; margin-left: 70px; font-weight: bold; margin-top: 3px;">교사 | 안은영 | 보성중</div>
     <div style="text-align : left; margin-left: 70px;">프랑스에서 오신 강사님들 덕분에 학생들이 ...</div>
   </div>
-  <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 50px">
+  <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 5%">
     <img src="./images/pro1.png" style = " width: 50px; float : left">
     <div style="text-align : left; margin-left: 70px; font-weight: bold; margin-top: 3px;">학생 | 장현웅 | 배재고</div>
     <div style="text-align : left; margin-left: 70px;">프랑스에서 오신 강사님들 덕분에 세계시민교육에 대하여 ...</div>
@@ -250,32 +281,36 @@
 
 
   <div class = "inclass" >
-    <div >
-      <div style="float : left; width:500px; height: 30px;margin-left: 16.8%; margin-top: 100px; font-size: 30px;">
+    <div style="width: 1000px; height: 180px; ">
+
+    </div>
+    <div class="youdiv">
+      <div class="youfont1">
       | 인기 강사 추천
       </div>
-      <div style = "float : right;  height: 60px; line-height: 60px; margin-right: 24%; margin-top: 140px;">
-         강사 더보기 >
-        </div>
-        <div style="float: left;  width:800px; height: 60px; margin-left: 10%; margin-top: 15px; font-size: 35px; font-weight: bolder;">
+      
+        <div class="youfont3">
            이번달 클래스
           </div>
-    </div>
-    
+          <div class="youfont2">
+           강사 더보기 >
+           </div>
+          </div>
         <!-- Swiper -->
-        <div class="swiper mySwiper" style="height:660px">
+        <div class="swiper mySwiper2"  style="height: 800px;">
           <div class="swiper-wrapper">
             <div class="swiper-slide" >
               <div class="slidemenu2" style="text-align: center;">
-                <div style="display: inline-block; height: 330px; width :80%; background-color: white; margin-top: 60px;">
+                <div class="classimg" >
+                  <img src="./images/증명사진/마동석.jpg"  style="width: 100%;">
                 </div>
-                <div style="float: left; background-color: white; width: 80px; height:55px; margin-top: 10px; margin-left: 20px;">
+                <div class="classflag">
                 </div>
-                <div style="float : left; color : black; margin-top : 22px; margin-left : 17px">
-                  미국
+                <div class="classcty">
+                  한국
                 </div>
-                <div style="text-align: center; margin-top: 85px; margin-left: 50px; width:200px; height: 90px; line-height: 90px; font-size: 35px; font-weight: bolder; color: black;">
-                  케빈
+                <div class="classname">
+                  마동석
                 </div>
               </div>
               </div>
@@ -518,7 +553,7 @@
       </div>
       <div style="margin-top: 30px; margin-bottom: 30px;">
         
-        <img class="logos" src="./images/helloworldclass.png" style="width: 150px; ">
+        <img class="logos" src="./images/helloworldclass.png" style="width: 150px; margin-left: 0px;">
       </div>
       <!-- Grid row -->
     </div>
@@ -611,7 +646,7 @@ $(function(){
             // false면 자동 순환하지 않는다.
             interval: 3000,
             // hover를 설정하면 마우스를 가져대면 자동 순환이 멈춘다.
-            pause: "hover",
+            pause: "",
             // 순환 설정, true면 1 -> 2가면 다시 1로 돌아가서 반복
             wrap: true,
             // 키보드 이벤트 설정 여부(?)
@@ -620,10 +655,21 @@ $(function(){
       });
 
      
-    
+      var div1 = document.getElementById("m1");
     var div2 = document.getElementById("m2");
     var div3 = document.getElementById("m3");
+    var div4 = document.getElementById("m4");
    
+    div1.addEventListener("mouseover", function (e) {
+      gsap.to("#m1", {
+       width : 300
+    });
+  });
+    div1.addEventListener("mouseout", function (e) {
+      gsap.to("#m1", {
+       width : 160
+    });
+  });
     div2.addEventListener("mouseover", function (e) {
       gsap.to("#m2", {
        width : 300
@@ -644,9 +690,72 @@ $(function(){
         width : 160
     });
   });
+  div4.addEventListener("mouseover", function (e) {
+      gsap.to("#m4", {
+       width : 300
+    });
+  });
+    div4.addEventListener("mouseout", function (e) {
+      gsap.to("#m4", {
+       width : 160
+    });
+  });
 
 
+  
+if(matchMedia("screen and (max-width: 768px)").matches){
   var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      var swiper2 = new Swiper(".mySwiper2", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        slidesPerGroup: 2,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+}//else if(matchMedia("screen and (max-width: 1023px)").matches){
+  //console.log("tablet");
+//}
+else if(matchMedia("screen and (min-width: 1024px)").matches){
+  var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        slidesPerGroup: 2,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      var swiper2 = new Swiper(".mySwiper2", {
         slidesPerView: 3,
         spaceBetween: 30,
         slidesPerGroup: 3,
@@ -661,5 +770,11 @@ $(function(){
           prevEl: ".swiper-button-prev",
         },
       });
+}
+
+
+       window.onresize = function(){
+   document.location.reload();
+ };
   </script>
 </html>
