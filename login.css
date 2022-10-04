@@ -1,0 +1,56 @@
+.main {
+  
+  margin:0 auto; 
+  width: 550px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  background-color: rgb(242,242,242);
+}
+
+.logo {
+  margin-top: 0px;
+  margin-bottom: 40px;
+  color: black;
+  font-weight: bolder;
+}
+
+#login {
+  
+  background-color: rgb(24,87,126);
+  border-color: transparent;
+  color: white;
+}
+
+.account {
+ margin-left: 2.5%;
+  width: 40%;
+  height: 35px;
+  display: block;
+  margin-bottom: 3px;
+  padding: 3px;
+  border: 1px solid rgb(217,217,217);
+  border-radius: 5px;
+  background-color: rgb(242,242,242);
+}
+
+#alert {
+  border-color: transparent;
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+ 
+
+
+
+}
+

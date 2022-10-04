@@ -1,68 +1,79 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
-  .menu {
-    /* 기본 스태틱에서는 좌표 적용이 안됨 */
-    position: absolute;
-    top: 50px;
-    left: 900px;
-    width: 200px;
-    height: 200px;
-    font-size: 30px;
-    background-color: palegreen;
-    color: blue;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-.box{ margin: 15px; z-index: 10; }
-.box1{  position: fixed;
-    top: 100px;
-    right: 5%;
-    width: 160px;
-    height: 200px;
-    font-size: 17px;
-    z-index: 10;
-    border-radius: 20px; 
+
+.menu {
+  /* 기본 스태틱에서는 좌표 적용이 안됨 */
+  position: absolute;
+  top: 50px;
+  left: 900px;
+  width: 200px;
+  height: 200px;
+  font-size: 30px;
+  background-color: palegreen;
+  color: blue;
+}
+
+.box {
+  margin: 15px;
+  z-index: 10;
+}
+
+.box1 {
+  position: fixed;
+  top: 100px;
+  right: 5%;
+  width: 160px;
+  height: 200px;
+  font-size: 17px;
+  z-index: 10;
+  border-radius: 20px;
   text-align: center;
-color: white;
-box-shadow: 2px -3px 7px 2px rgba(61, 61, 61, 0.5)
+  color: white;
+  box-shadow: 2px -3px 7px 2px rgba(61, 61, 61, 0.5)
 }
-.searchbar{
+
+.searchbar {
   position: absolute;
-   top: 23%;
-    left: 30%; 
-    width: 30%; 
-    height: 60px;
-    line-height: 60px;
-    font-size: 18px;
-    color: rgb(191,191,191);
-    background-color: rgb(230,230,230);
-    border-radius: 7px;
+  top: 23%;
+  left: 30%;
+  width: 30%;
+  height: 60px;
+  line-height: 60px;
+  font-size: 18px;
+  color: rgb(191, 191, 191);
+  background-color: rgb(230, 230, 230);
+  border-radius: 7px;
 }
-.searchbar1{
+
+.searchbar1 {
   position: absolute;
-   top : 23%;
-    left: 58%; 
-    width: 8%; 
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: rgb(191,191,191);
-    border-radius: 7px;
-    color: #000000;
+  top: 23%;
+  left: 58%;
+  width: 8%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgb(191, 191, 191);
+  border-radius: 7px;
+  color: #000000;
 }
+
 [placeholder]:empty:before {
   display: block;
   content: attr(placeholder);
   color: #a6a6a6;
 }
- /* 여기부터 슬라이드 스타일시트*/
- .swiper {
+
+/* 여기부터 슬라이드 스타일시트*/
+.swiper {
   width: 1000px;
   height: 350px;
-  
+
 }
 
 .swiper-slide {
@@ -91,474 +102,524 @@ box-shadow: 2px -3px 7px 2px rgba(61, 61, 61, 0.5)
   object-fit: cover;
 }
 
-.slidemenu{
+.slidemenu {
   color: #fff;
-   height: 32px;
-    text-align: center;
-     line-height: 35px;
-      border-radius: 7px;
-       background-color: rgb(166, 166, 166);
-        margin-top: 10px;
-}
-.slidemenu2{
-  color: #fff;
-   height: 540px;
-    text-align: center;
-     line-height: 35px;
-      border-radius: 50px;
-       background-color: rgb(242,242,242);
-        margin-top: 10px;
-}
-.classimg{
-  display: inline-block;
-   height: auto;
-    width :80%;
-    background-color: white; 
-    margin-top: 60px;
-}
-.classflag{
-  float: left;
-   background-color: white;
-    width: 80px;
-     height:55px;
-      margin-top: 10px;
-       margin-left: 20px;
-       display:table-cell;
-       background-size: contain
-}
-.classcty{
-  float : left;
-   color : black;
-   margin-top : 22px;
-   margin-left : 17px
-}
-.classname{
+  height: 32px;
   text-align: center;
-   margin-top: 85px;
-    margin-left: 50px;
-     width:200px;
-      height: 90px; 
-      line-height: 90px;
-       font-size: 35px;
-        font-weight: bolder;
-         color: black;
+  line-height: 35px;
+  border-radius: 7px;
+  background-color: rgb(166, 166, 166);
+  margin-top: 10px;
 }
 
-.youdiv{/*폰트 정하기*/
-   width: 1000px; height: 80px; 
+.slidemenu2 {
+  color: #fff;
+  height: 540px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50px;
+  background-color: rgb(242, 242, 242);
+  margin-top: 10px;
+}
 
-  
+.classimg {
+  display: inline-block;
+  height: auto;
+  width: 80%;
+  background-color: white;
+  margin-top: 60px;
+}
+
+.classflag {
+float: left;
+  margin-left: 10px;
+width: 40%;
+height: 80px;
+}
+
+.classcty {
+  float: left;
+  color: black;
+  margin-top: 22px;
+  margin-left: 17px
+}
+
+.classname {
+  text-align: center;
+  margin-top: 85px;
+  margin-left: 50px;
+  width: 200px;
+  height: 90px;
+  line-height: 90px;
+  font-size: 30px;
+  font-weight: bolder;
+  color: black;
+}
+
+.youdiv {
+  /*폰트 정하기*/
+  width: 1000px;
+  height: 80px;
+
+
   margin: auto;
 }
-.youfont1{
-  float : left;
-   width:30%;
-   text-align: left;
-    height: 30px;
-    margin-left: 0%;
-      font-size: 20px;
+
+.youfont1 {
+  float: left;
+  width: 30%;
+  text-align: left;
+  height: 30px;
+  margin-left: 0%;
+  font-size: 20px;
 }
-.youfont2{
-  width:10%;
+
+.youfont2 {
+  width: 10%;
   text-align: right;
   float: right;
-   height: 40px;
-   line-height: 65px;
-   
-  
-    
+  height: 40px;
+  line-height: 65px;
+
+
+
 }
-.youfont3{
-  width:30%;
+
+.youfont3 {
+  width: 30%;
   text-align: left;
-   height: 30px;
-   margin-left: 0%;
-    
-     font-size: 35px;
-     font-weight: bolder;
+  height: 30px;
+  margin-left: 0%;
+
+  font-size: 35px;
+  font-weight: bolder;
 }
+
 nav {
-    
-    
-    z-index: 10;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* 요소의 최소 너비 지정, height 속성 무시
+
+
+  z-index: 10;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* 요소의 최소 너비 지정, height 속성 무시
       vh단위는 브라우저 안쪽 높이(window.innerHeight)을 기준으로
       설정된다. 하지만 태블릿이나, 모바일의 경우에는 뷰 포트에 따라
       맞춰짐*/
-    min-height: 8vh;
-    font-family: "Poppins", sans-serif;
-    
-    flex-direction: column;
-     width: 100%; 
-     position: absolute;
-      z-index: 20;
-     top: 0px
-  }
-  
-  .logo {
-    color: rgb(226, 226, 226);
+  min-height: 8vh;
+  font-family: "Poppins", sans-serif;
 
-  }
-  .logoss{
-
-    width: 180px;
-    margin-left: 45%;
-  }
-  
-  
-  .nav-links {
-    height: 100%;
-    width: 90%;
-    display: none;
-    justify-content: space-around;
-  }
-  .nav-linkss {
-    margin-top: 0.7%;
-    display: flex;
-    justify-content: space-around;
-  }
-  .nav-links lil {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-  }
-  
-  .nav-links li {
-    list-style: none;
-  }
-  .nav-linkss li {
-    list-style: none;
-  }
-  .nav-links a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px;
-  }
-  .nav-linkss a {
-    color: rgb(0,0,0);
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px;
-  }
-  
-  .burger {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .burger div {
-   
-    width: 25px;
-    height: 3px;
-    background-color: rgb(226, 226, 226);
-    margin: 5px;
-    transition: all 0.3s ease;
-  }
-  .footericon{
-    margin-top: 0px;
-  }
-  /*유튜브 클래스*/
-  .youtubeclass{
-    display: inline-block;
-     border-radius: 10px 10px 0px 0px;
-      background-color: rgb(242,242,242);
-       width:1000px;
-        height: 340px;
-        margin-top: 15px;
-  }
-
-  .inclass{
-    text-align: center;
-     border: 1px solid aliceblue;
-      position: relative;
-       height: 1000px;
-        background-color: aliceblue;
-  }
-  @media screen and (max-width: 1024px) {
-    .nav-links {
-      width: 90%;
-    }
-    .imgslide{
-      width:40%
-    }
-    .profile{
-      width:400px; 
-      margin-right: 1%;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .nav{
-      
-      width: 100%; 
-      position: absolute;
-       z-index: 20;
-       height: 100%;
-    }
-    .footericon{
-      margin-top: 30px;
-    }
-    .box1{  display: none;}
-    body {
-      overflow-x: hidden;
-      position: relative;
-    }
- 
-    .nav-links {
-      position: fixed;
-      top: 0;
-      right: 0;
-      height: 100%;
-      background-color: aliceblue;
-      flex-direction: column;
-      align-items: center;
-     
-      width: 50%;
-      transform: translateX(100%);
-      z-index: 20;
-      
-      display: none; /*display 추가하니까 디자인 적용 안됨*/
-      
-    }
-    .nav-links li {
-     
-      opacity: 0;
-    }
-    .nav-linkss li {
-      opacity: 0;
-    }
-    .burger {
-      display: block;
-    }
-  
-    .nav-active {
-      transform: translateX(0%); 
-      align-items: center;
-      display: flex;
-     
-    }
-    .logo{
-      text-align: center;
-      
-    }
-    .logos{
-      text-align: center;
-      width: 100px;
-      margin-left: 0%;
-    }
-    .logoss{
-      text-align: center;
-      width: 100px;
-      margin-left: 30%;
-    }
-    .imgslide{
-      width:100%
-    }
-    .profile{
-      width:100px; 
-      margin-right: 10px;
-      margin-bottom: 10px;
-    }
-    .t1{
-      float: left;
-      font-size: 20px; 
-    }
-    @keyframes navLinkFade {
-      from {
-        opacity: 0;
-        transform: translateX(5px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-
-    .youtubeclass{
-      display: inline-block;
-       border-radius: 10px 10px 0px 0px;
-        background-color: rgb(242,242,242);
-         width:100%;
-          height: 340px;
-          margin-top: 15px;
-    }
-
-    .inclass{
-      text-align: center;
-       border: 1px solid aliceblue;
-        position: relative;
-         height: 1000px;
-          background-color: aliceblue;
-    }
-
-    /*여기부터 검색창*/
-    .searchbar{
-      position: absolute;
-       top: 23%;
-        left: 5%; 
-        width: 70%; 
-        height: 30px;
-        line-height: 30px;
-        font-size: 13px;
-        color: rgb(191,191,191);
-        background-color: rgb(230,230,230);
-        border-radius: 7px;
-    }
-    .searchbar1{
-      position: absolute;
-       top : 23%;
-        left: 75%; 
-        width: 20%; 
-        height: 30px;
-        line-height: 30px;
-        text-align: center;
-        font-size: 13px;
-        font-weight: bold;
-        background-color: rgb(191,191,191);
-        border-radius: 7px;
-        color: #000000;
-    }
-     /* 여기부터 슬라이드 스타일시트*/
- .swiper {
+  flex-direction: column;
   width: 100%;
-  height: 350px;
-  
+  position: absolute;
+  z-index: 20;
+  top: 0px
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
+.logo {
+  color: rgb(226, 226, 226);
 
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: block;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 270px;
-  object-fit: cover;
-}
+.logoss {
 
-.slidemenu{
-  color: #fff;
-   height: 32px;
-    text-align: center;
-     line-height: 35px;
-      border-radius: 7px;
-       background-color: rgb(166, 166, 166);
-        margin-top: 10px;
-}
-.slidemenu2{
-  color: #fff;
-   height: 400px;
-    text-align: center;
-     line-height: 35px;
-      border-radius: 50px;
-       background-color: rgb(242,242,242);
-        margin-top: 10px;
-}
-
-.youdiv{/*폰트 정하기*/
-  width: 1000%; height: 80px; 
-
- 
- margin: auto;
-}
-.youfont1{
- float : left;
-  width:30%;
-  text-align: left;
-   height: 30px;
-   margin-left: 0%;
-     font-size: 20px;
-}
-.youfont2{
- width:10%;
- text-align: right;
- float: left;
-  height: 40px;
-  line-height: 65px;
-  
- 
-   
-}
-.youfont3{
- width:30%;
- text-align: left;
-  height: 30px;
-  margin-left: 0%;
-   
-    font-size: 35px;
-    font-weight: bolder;
+  width: 180px;
+  margin-left: 45%;
 }
 
 
+.nav-links {
+  height: 100%;
+  width: 90%;
+  display: none;
+  justify-content: space-around;
+}
 
-.classimg{
+.nav-linkss {
+  margin-top: 0.7%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-links lil {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-linkss li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.nav-linkss a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+
+  width: 25px;
+  height: 3px;
+  background-color: rgb(226, 226, 226);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.footericon {
+  margin-top: 0px;
+}
+
+/*유튜브 클래스*/
+.youtubeclass {
   display: inline-block;
-   height: auto;
-    width :80%;
-    background-color: white; 
-    margin-top: 60px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: rgb(242, 242, 242);
+  width: 1000px;
+  height: 340px;
+  margin-top: 15px;
 }
-.classflag{
-  float: left;
-   background-color: white;
-    width: 80px;
-     height:55px;
-      margin-top: 10px;
-       margin-left: 20px;
-       display:table-cell;
-       background-size: contain
-}
-.classcty{
-  float : left;
-   color : black;
-   margin-top : 22px;
-   margin-left : 17px
-}
-.classname{
+
+.inclass {
   text-align: center;
-   margin-top: 85px;
-    margin-left: 50px;
-     width:200px;
-      height: 90px; 
-      line-height: 90px;
-       font-size: 35px;
-        font-weight: bolder;
-         color: black;
+  border: 1px solid aliceblue;
+  position: relative;
+  height: 1000px;
+  background-color: aliceblue;
 }
 
+div#map {
+  width: 100%; height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 90%;
+  }
+
+  .imgslide {
+    width: 40%
+  }
+
+  .profile {
+    width: 400px;
+    margin-right: 1%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+
+    width: 100%;
+    position: absolute;
+    z-index: 20;
+    height: 100%;
+  }
+
+  .footericon {
+    margin-top: 30px;
+  }
+
+  .box1 {
+    display: none;
+  }
+
+  body {
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: aliceblue;
+    flex-direction: column;
+    align-items: center;
+
+    width: 50%;
+    transform: translateX(100%);
+    z-index: 20;
+
+    display: none;
+    /*display 추가하니까 디자인 적용 안됨*/
 
   }
-  
-  .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-  
-  .toggle .line2 {
+
+  .nav-links li {
+
     opacity: 0;
   }
-  
-  .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+
+  .nav-linkss li {
+    opacity: 0;
   }
+
+  .burger {
+    display: block;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+    align-items: center;
+    display: flex;
+
+  }
+
+  .logo {
+    text-align: center;
+
+  }
+
+  .logos {
+    text-align: center;
+    width: 100px;
+    margin-left: 0%;
+  }
+
+  .logoss {
+    text-align: center;
+    width: 100px;
+    margin-left: 30%;
+  }
+
+  .imgslide {
+    width: 100%
+  }
+
+  .profile {
+    width: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .t1 {
+    float: left;
+    font-size: 20px;
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(5px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .youtubeclass {
+    display: inline-block;
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgb(242, 242, 242);
+    width: 100%;
+    height: 340px;
+    margin-top: 15px;
+  }
+
+  .inclass {
+    text-align: center;
+    border: 1px solid aliceblue;
+    position: relative;
+    height: 1000px;
+    background-color: aliceblue;
+  }
+
+  /*여기부터 검색창*/
+  .searchbar {
+    position: absolute;
+    top: 23%;
+    left: 5%;
+    width: 70%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    color: rgb(191, 191, 191);
+    background-color: rgb(230, 230, 230);
+    border-radius: 7px;
+  }
+
+  .searchbar1 {
+    position: absolute;
+    top: 23%;
+    left: 75%;
+    width: 20%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: rgb(191, 191, 191);
+    border-radius: 7px;
+    color: #000000;
+  }
+
+  /* 여기부터 슬라이드 스타일시트*/
+  .swiper {
+    width: 100%;
+    height: 350px;
+
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: block;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+  }
+
+  .slidemenu {
+    color: #fff;
+    height: 32px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 7px;
+    background-color: rgb(166, 166, 166);
+    margin-top: 10px;
+  }
+
+  .slidemenu2 {
+    color: #fff;
+    height: 500px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50px;
+    background-color: rgb(242, 242, 242);
+    margin-top: 10px;
+  }
+
+  .youdiv {
+    /*폰트 정하기*/
+    width: 1000%;
+    height: 80px;
+
+
+    margin: auto;
+  }
+
+  .youfont1 {
+    float: left;
+    width: 30%;
+    text-align: left;
+    height: 30px;
+    margin-left: 0%;
+    font-size: 20px;
+  }
+
+  .youfont2 {
+    width: 10%;
+    text-align: right;
+    float: left;
+    height: 40px;
+    line-height: 65px;
+
+
+
+  }
+
+  .youfont3 {
+    width: 30%;
+    text-align: left;
+    height: 30px;
+    margin-left: 0%;
+
+    font-size: 35px;
+    font-weight: bolder;
+  }
+
+
+
+  .classimg {
+    display: inline-block;
+    height: auto;
+    width: 80%;
+    background-color: white;
+    margin-top: 60px;
+  }
+
+  .classflag {
+    float: left;
+    background-color: white;
+    width: 80px;
+    height: 55px;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: table-cell;
+    background-size: contain
+  }
+
+  .classcty {
+    float: left;
+    color: black;
+    margin-top: 22px;
+    margin-left: 17px
+  }
+
+  .classname {
+    text-align: center;
+    margin-top: 65px;
+    margin-left: 10%;
+    width: 200px;
+    height: 90px;
+    line-height: 90px;
+    font-size: 25px;
+    font-weight: bolder;
+    color: black;
+  }
+
+
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
