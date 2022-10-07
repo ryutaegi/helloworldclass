@@ -273,3 +273,37 @@ function initMap() {
         }
     }
 }
+
+
+var loginn = JSON.parse(localStorage.getItem("cast"))
+if(loginn["로그인유무"]==1)
+{
+  const element = document.getElementById('log');
+  element.innerHTML 
+  = '&nbsp&nbsp&nbsp&nbsp로그아웃&nbsp&nbsp&nbsp&nbsp';
+}
+else{
+  const element = document.getElementById('log');
+  element.innerHTML 
+  = '&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp로그인&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp';
+
+
+}
+function logclick(){
+
+ 
+if(loginn["로그인유무"]==1)
+{
+  cast = {
+    "로그인유무" : 0,
+};
+localStorage.setItem("cast", JSON.stringify(cast));
+ location.href = "./index.html";
+}
+else{
+location.href = "./login.html";
+}
+
+// Json Object를 저장하기
+
+}

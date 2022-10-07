@@ -4,10 +4,16 @@ const login = document.getElementById('login')
 let errStack = 0;
 
 login.addEventListener('click', () => {
-    if (id.value == 'admin') {
+    if (id.value == 'admin@admin') {
         if (password.value == '1234') {
-            alert('로그인되었습니다!')
+            alert('로그인되었습니다!');
+            var cast = {
+                "로그인유무" : 1,
+            };
+            // Json Object를 저장하기
+            localStorage.setItem("cast", JSON.stringify(cast));
             location.href = "index.html";
+            
         }
         else {
             alert('이메일과 비밀번호를 확인해주세요!')
@@ -22,3 +28,5 @@ login.addEventListener('click', () => {
         alert('비밀번호를 5회 이상 틀리셨습니다. 비밀번호 찾기를 권장드립니다.')
     }
 })
+
+

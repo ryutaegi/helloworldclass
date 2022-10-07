@@ -35,11 +35,11 @@
         <div class="logo" style="flex-direction: row;">
 
 
-          <img class="logoss" src="./images/helloworldclass.png">
+          <a href="index.html"><img  class="logoss" src="./images/helloworldclass.png" ></a>
           <ul class="nav-linkss" style="float: right;">
-            <li style="margin-right: 40px; background-color: white; border-radius: 10px; border:7px solid white; "><a
-                href="login.html">&nbsp&nbsp&nbsp로그인&nbsp&nbsp&nbsp</a></li>
-          </ul>
+            <div onclick="logclick()" id="log" style="margin-right: 40px; color : black; background-color: white; border-radius: 10px; border:7px solid white; font-weight: bolder; ">
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp로그인&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
+            </ul>
         </div>
 
       </div>
@@ -47,7 +47,7 @@
       <ul class="nav-links">
         <li><a href="login.html">로그인</a></li>
         <li><a href="#">홈</a></li>
-        <li><a href="#">강사찾기</a></li>
+        <li><a href="teacher.html">강사찾기</a></li>
         <li><a href="application.html">커뮤니티</a></li>
         <li><a href="detail.html">가이드</a></li>
 
@@ -61,7 +61,7 @@
 
 
     <div id="m1" class="box1" style="background-color: white; color: black;">Home</div>
-    <div id="m2" class="box1" style="top: 150px; background-color: rgb(224, 30, 54);">
+    <div id="m2" class="box1" OnClick="location.href ='teacher.html'" style="top: 150px; background-color: rgb(224, 30, 54);">
       <div>강사 찾기</div>
       <img src="./images/menu1.svg" style="width:120px; margin-top: 30px; margin-left : 10px; float: left;">
     </div>
@@ -195,9 +195,7 @@
         <div class="youfont3">
           유튜브클래스
         </div>
-        <div class="youfont2">
-          더보기 >
-        </div>
+      
       </div>
 
       <!-- Swiper -->
@@ -311,7 +309,7 @@
         </div>
       </div>
       <!-- Swiper -->
-      <div class="swiper mySwiper2" style="height: 800px;">
+      <div class="swiper mySwiper2" style="height: 780px;">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="slidemenu2" style="text-align: center;">
@@ -482,45 +480,7 @@
 
     </div>
 
-    <div
-    style="text-align: center; border: 1px solid aliceblue; position: relative; height: 1000px; background-color: aliceblue;">
-    <div style="width: 1000px; height: 180px; ">
 
-    </div>
-    <div class="youdiv">
-      <div class="youfont1">
-        | 다양한 국가별 강사
-      </div>
-
-      <div class="youfont3">
-        헬로우월드클래스
-      </div>
-      
-    </div>
-
-   
-
-    <div class="youtubeclass" style="height: 550px">
-      <div
-        style="border-radius: 10px 10px 0px 0px; float: left; background-color: rgb(217,217,217); width:100%; height: 30px;">
-        <div style="float: right; line-height: 30px; margin-right: 10px; font-weight: bold;">클릭하여 확대 ></div>
-      </div>
-      <div id="map"></div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-  </div>
 
   <!-- Footer -->
   <footer class="text-center text-lg-start bg-white text-muted">
@@ -563,7 +523,7 @@
               소개
             </h6>
             <p>
-              <a href="#!" class="text-reset">헬로우월드클래스</a>
+            <a href="introduce.html" class="text-reset">헬로우월드클래스</a>
             </p>
             <p>
               <a href="#!" class="text-reset">이용약관</a>
