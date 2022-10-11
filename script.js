@@ -276,7 +276,7 @@ function initMap() {
 
 
 var loginn = JSON.parse(localStorage.getItem("cast"))
-if(loginn["로그인유무"]==1)
+if(loginn["login10"]==1)
 {
   const element = document.getElementById('log');
   element.innerHTML 
@@ -297,10 +297,10 @@ else{
 function logclick(){
 
  
-if(loginn["로그인유무"]==1)
+if(loginn["login10"]==1)
 {
   cast = {
-    "로그인유무" : 0,
+    "login10" : 0,
 };
 localStorage.setItem("cast", JSON.stringify(cast));
  location.href = "./index.html";
@@ -315,7 +315,7 @@ location.href = "./login.html";
 var teach = document.getElementById("teach");
 var m2 = document.getElementById("m2");
 teach.addEventListener("click",function teachclick(){
- if(loginn["로그인유무"]==1)
+ if(loginn["login10"]==1)
  {
   location.href = "./teacher.html";
  }
@@ -339,7 +339,7 @@ teach.addEventListener("click",function teachclick(){
 
 })
 m2.addEventListener("click",function teachclick(){
-  if(loginn["로그인유무"]==1)
+  if(loginn["login10"]==1)
   {
    location.href = "./teacher.html";
   }

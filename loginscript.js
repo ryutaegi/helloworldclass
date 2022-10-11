@@ -8,7 +8,7 @@ login.addEventListener('click', () => {
         if (password.value == '1234') {
             alert('로그인되었습니다!');
             var cast = {
-                "로그인유무" : 1,
+                "login10" : 1,
             };
             // Json Object를 저장하기
             localStorage.setItem("cast", JSON.stringify(cast));
