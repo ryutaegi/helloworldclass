@@ -20,14 +20,21 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
           <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
           	  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+              <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+              <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+              <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <script> 
+    AOS.init(); 
+</script>
   <div style="overflow: hidden;">
     <nav>
       <div style="width: 100%; right: 0px;">
@@ -46,8 +53,8 @@
 
       <ul class="nav-links">
         <li onclick="logclick()" id="log1" style="font-weight: bold;">로그인</li>
-        <li><a href="#">홈</a></li>
-        <li><a href="teacher.html">강사찾기</a></li>
+        <li ><a href="#">홈</a></li>
+        <li onclick="teachclick()" style="font-weight: bold;">강사찾기</li>
         <li><a href="application.html">커뮤니티</a></li>
         <li><a href="detail.html">가이드</a></li>
 
@@ -61,7 +68,7 @@
 
 
     <div id="m1" class="box1" style="background-color: white; color: black;">Home</div>
-    <div id="m2" class="box1" OnClick="location.href ='teacher.html'" style="top: 150px; background-color: rgb(224, 30, 54);">
+    <div id="m2" class="box1" onclick="teachclick()" style="top: 150px; background-color: rgb(224, 30, 54);">
       <div>강사 찾기</div>
       <img src="./images/menu1.svg" style="width:120px; margin-top: 30px; margin-left : 10px; float: left;">
     </div>
@@ -73,13 +80,13 @@
       <div>가이드</div>
       <img src="./images/menu3.svg" style="width:120px; text-align: center; margin-top: 25px;">
     </div>
+   
 
 
 
-
-  <div class="section">
+  <div class="section1">
     <!-- carousel를 구성할 영역 설정 -->
-    <div style="width: 100%;">
+    <div id = "before"style="width: 100%;">
       <!-- carousel를 사용하기 위해서는 class에 carousel와 slide 설정한다. -->
       <!-- carousel는 특이하게 id를 설정해야 한다.-->
       <div id="carousel-example-generic" class="carousel slide">
@@ -157,15 +164,24 @@
       </div>
     </div>
   </div>
-  <div class="section" >
-    <div style=" position : relative;">
-      <img src="./images/main20.png" style="width:100%;">
-      <div contenteditable placeholder='&nbsp;&nbsp;다양한 국가의 선생님들을 검색해보세요.' class="searchbar"></div>
+  <div class="section1" >
+    <div id="mapdiv" style=" position : relative; width: 100%; height: 1000px;">
+      <img id="map1" src="./images/map1.png" style="width:30%; float: left; margin-top: 100px;">
+      <img id="map2" src="./images/map2.png" style="width:38%; float: right;margin-right: 100px; margin-top: 100px;">
+      
+      <img id="map5" src="./images/map5.png" style="width:20%;  margin-left: 0px; margin-top: 800px; float : left;">
+      <img id="map3" src="./images/map3.png" style="width:40%;  margin-left: 18%; float: left; ">
+      <img id="map4" src="./images/map4.png" style="width:13%; ">
+      
+      <img id="map6" src="./images/map6.png" style="width:22%; float: right;">
+
+      <div contenteditable placeholder='다양한 국가의 선생님들을 검색해보세요.' class="searchbar" ></div>
       <div class="searchbar1">
+        <span style="background-color: rgb(191, 191, 191); height : 45px; width : 4px; float: left;"></span>
         <img src="./images/main21.svg" style="width:15%; margin-bottom: 2%; margin-right: 4%;">클래스 검색
       </div>
-      <div class="searchbar" style="margin-top: 4%; background-color: rgb(255, 255, 255); height: 0px;">
-        <img src="./images/main23.png" style="width:100%; 
+      <div class="searchbar2" style="margin-top: 2%; background-color: rgb(255, 255, 255); height: 0px;">
+        <img src="./images/main23.png" style="width:99%; 
          color: rgb(191,191,191);">
       </div>
 
@@ -173,8 +189,9 @@
   
   <img src="./images/main122.png" style="width:100%;">
 </div>
-  <div class="section" >
-    <div style="position: relative;">
+
+  <div class="section1" >
+    <div id="next" style="position: relative;">
       <img src="./images/main22.png" style="width:100%;">
       <img OnClick="location.href ='application.html'" src="./images/main24.png" style="
       width:30%;  position: absolute;
@@ -189,13 +206,13 @@
   </div>
  
 
-  <div class="section">
+  <div class="section1">
     <div
       style="text-align: center; border: 1px solid aliceblue; position: relative; height: 1000px; background-color: aliceblue;">
       <div style="width: 1000px; height: 80px; ">
 
       </div>
-      <div class="youdiv">
+      <div class="youdiv" >
         <div class="youfont1">
           | 친절한 강사와 함께하는
         </div>
@@ -270,28 +287,42 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination" ></div>
       </div>
+      <div style="margin: auto;">
+        
+      <div class="youdiv1" style="height: 350px; margin-left: 24%; margin-top: 15px;" >
+        <div class="youfont1">
+          | 헬로우월드클래스
+        </div>
+
+        <div class="youfont3">
+          이용자의 생생한 후기
+        </div>
+      <img src="./images/point.png" style=" width: 400px; margin-top: 65px; float: left; margin-left: 10px;" >
+      
+    </div>
       <div class="youtubeclass">
+        
         <div
           style="border-radius: 10px 10px 0px 0px; float: left; background-color: rgb(217,217,217); width:100%; height: 30px;">
           <div style="float: right; line-height: 30px; margin-right: 10px; font-weight: bold;">후기 더보기 ></div>
         </div>
-        <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 5%">
+        <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 3%">
           <img src="./images/pro1.png" style=" width: 50px; float : left">
           <div style="text-align : left; margin-left: 70px; font-weight: bold; margin-top: 3px;">강사 | 보슈라 엘 갈리 | 튀니지
           </div>
           <div style="text-align : left; margin-left: 70px;">동대문중학교 학생들과 함께 튀니지의 문화와 ...</div>
         </div>
-        <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 5%">
+        <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 3%">
           <img src="./images/pro2.png" style=" width: 50px; float : left">
           <div style="text-align : left; margin-left: 70px; font-weight: bold; margin-top: 3px;">강사 | 케빈 | 미국</div>
           <div style="text-align : left; margin-left: 70px;">게임을 통해서 배재중학교 학생들과세계시민교육 ...</div>
         </div>
-        <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 5%">
+        <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 3%">
           <img src="./images/pro3.png" style=" width: 50px; float : left">
           <div style="text-align : left; margin-left: 70px; font-weight: bold; margin-top: 3px;">교사 | 안은영 | 보성중</div>
           <div style="text-align : left; margin-left: 70px;">프랑스에서 오신 강사님들 덕분에 학생들이 ...</div>
         </div>
-        <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 5%">
+        <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 3%">
           <img src="./images/pro1.png" style=" width: 50px; float : left">
           <div style="text-align : left; margin-left: 70px; font-weight: bold; margin-top: 3px;">학생 | 장현웅 | 배재고</div>
           <div style="text-align : left; margin-left: 70px;">프랑스에서 오신 강사님들 덕분에 세계시민교육에 대하여 ...</div>
@@ -299,7 +330,8 @@
       </div>
     </div>
   </div>
-<div class="section" >
+  </div>
+<div class="section1" >
     <div class="inclass">
       <div style="width: 1000px; height: 80px; ">
 

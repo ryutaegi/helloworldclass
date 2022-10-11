@@ -39,10 +39,11 @@ html, body{ width:100%; height: 100%;}
 .searchbar {
   position: absolute;
   top: 23%;
-  left: 30%;
-  width: 30%;
-  height: 60px;
-  line-height: 60px;
+  left: 24%;
+  
+  width: 850px;
+  height: 45px;
+  line-height: 45px;
   font-size: 18px;
   color: rgb(191, 191, 191);
   background-color: rgb(230, 230, 230);
@@ -52,16 +53,29 @@ html, body{ width:100%; height: 100%;}
 .searchbar1 {
   position: absolute;
   top: 23%;
-  left: 58%;
-  width: 8%;
-  height: 60px;
-  line-height: 60px;
+  left: 68%;
+  width: 150px;
+  height: 45px;
+  line-height: 45px;
   text-align: center;
   font-size: 18px;
   font-weight: bold;
   background-color: rgb(191, 191, 191);
   border-radius: 7px;
   color: #000000;
+}
+.searchbar2 {
+  position: absolute;
+  top: 25%;
+  left: 24%;
+  
+  width: 1000px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 18px;
+  color: rgb(191, 191, 191);
+  background-color: rgb(230, 230, 230);
+  border-radius: 7px;
 }
 
 [placeholder]:empty:before {
@@ -133,16 +147,17 @@ html, body{ width:100%; height: 100%;}
 
 .classflag {
 float: left;
-  margin-left: 10px;
-width: 40%;
-height: 80px;
+  margin-left: 32px;
+width: 25%;
+height: 50px;
 }
 
 .classcty {
   float: left;
   color: black;
-  margin-top: 22px;
-  margin-left: 17px
+  margin-top: 12px;
+  margin-left: 17px;
+  font-weight: bold;
 }
 
 .classname {
@@ -165,14 +180,23 @@ height: 80px;
 
   margin: auto;
 }
+.youdiv1 {
+  /*폰트 정하기*/
+  width: 420px;
+  height: 80px;
+
+  
+  float: left;
+}
 
 .youfont1 {
   float: left;
-  width: 30%;
+  width: 100%;
   text-align: left;
   height: 30px;
   margin-left: 0%;
   font-size: 20px;
+
 }
 
 .youfont2 {
@@ -187,7 +211,7 @@ height: 80px;
 }
 
 .youfont3 {
-  width: 30%;
+  width: 100%;
   text-align: left;
   height: 30px;
   margin-left: 0%;
@@ -294,12 +318,24 @@ nav {
 
 /*유튜브 클래스*/
 .youtubeclass {
-  display: inline-block;
+  float: left;
+ 
+  border-radius: 10px 10px 0px 0px;
+  background-color: rgb(242, 242, 242);
+  width: 575px;
+  height: 340px;
+  margin-top: 15px;
+ 
+}
+.youtubeclass1 {
+  
+ display : inline-block;
   border-radius: 10px 10px 0px 0px;
   background-color: rgb(242, 242, 242);
   width: 1000px;
   height: 340px;
   margin-top: 15px;
+ 
 }
 
 .inclass {
@@ -455,9 +491,9 @@ div#map {
     position: absolute;
     top: 23%;
     left: 5%;
-    width: 70%;
-    height: 30px;
-    line-height: 30px;
+    width: 75%;
+    height: 25px;
+    line-height: 25px;
     font-size: 13px;
     color: rgb(191, 191, 191);
     background-color: rgb(230, 230, 230);
