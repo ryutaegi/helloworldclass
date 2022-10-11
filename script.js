@@ -312,8 +312,9 @@ location.href = "./login.html";
 // Json Object를 저장하기
 
 }
-
-function teachclick(){
+var teach = document.getElementById("teach");
+var m2 = document.getElementById("m2");
+teach.addEventListener("click",function teachclick(){
  if(loginn["로그인유무"]==1)
  {
   location.href = "./teacher.html";
@@ -336,7 +337,31 @@ function teachclick(){
   })
  }
 
-}
+})
+m2.addEventListener("click",function teachclick(){
+  if(loginn["로그인유무"]==1)
+  {
+   location.href = "./teacher.html";
+  }
+  else{
+   Swal.fire({
+     title: '로그인 후 서비스 이용이 가능합니다',
+     height: 500,
+     width : 500,
+     imageUrl: "./images/helloworldclass1.png",
+     showCancelButton: true,
+     confirmButtonColor: '#3085d6',
+     cancelButtonColor: '#d33',
+     confirmButtonText: '로그인 페이지로 이동',
+     cancelButtonText: '취소',
+   }).then((result) => {
+     if (result.value) {
+       location.href = "./login.html";  //"삭제" 버튼을 눌렀을 때 작업할 내용을 이곳에 넣어주면 된다. 
+     }
+   })
+  }
+ 
+ })
 window.addEventListener("wheel", function(e){
 	e.preventDefault();
 },{passive : false});
