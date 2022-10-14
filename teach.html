@@ -20,15 +20,19 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
           <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
           	  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+              <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+              <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+              <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+
   <link href="./images/helloworldclass.png" rel="shortcut icon" type="image/x-icon">
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+
   <div style="overflow: hidden;">
     <nav>
       <div style="width: 100%; right: 0px;">
@@ -38,17 +42,17 @@
 
           <a href="index.html"><img  class="logoss" src="./images/helloworldclass.png" ></a>
           <ul class="nav-linkss" style="float: right;">
-            <div onclick="logclick()" id="log" style="margin-right: 40px; color : black; background-color: white; border-radius: 10px; border:7px solid white; font-weight: bolder; ">
-              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp로그인&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
+            <li onclick="logclick()" id="log" style="margin-right: 40px; color : black; background-color: white; border-radius: 10px; border:7px solid white; font-weight: bolder; ">
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp로그인&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
             </ul>
         </div>
 
       </div>
 
       <ul class="nav-links">
-        <li><a href="login.html">로그인</a></li>
-        <li><a href="#">홈</a></li>
-        <li><a href="teacher.html">강사 찾기</a></li>
+        <li onclick="logclick()" id="log1" style="font-weight: bold;">로그인</li>
+        <li ><a href="#">홈</a></li>
+        <li id="teach" style="font-weight: bold;">강사찾기</li>
         <li><a href="application.html">강사 등록</a></li>
         <li><a href="detail.html">가이드</a></li>
 
@@ -62,62 +66,59 @@
 
 
     <div id="m1" class="box1" style="background-color: white; color: black;">Home</div>
-    <div id="m2" class="box1" OnClick="location.href ='teacher.html'" style="top: 150px; background-color: rgb(224, 30, 54);">
+    <div id="m2" class="box1" style="top: 150px; background-color: rgb(224, 30, 54);">
       <div>강사 찾기</div>
-      <img src="./images/menu1.svg" style="width:120px; margin-top: 30px; margin-left : 10px; float: left;">
+      <img src="./images/menu1.svg" style="width:120px; margin-top: 20px; margin-left : 10px; float: left;">
     </div>
     <div id="m3" class="box1" style="top: 200px; background-color: rgb(248, 157, 42)">
       <div>강사 등록</div>
-      <img src="./images/menu2.svg" style="width:120px; margin-top: 40px; margin-left : 10px; float: left;">
+      <img src="./images/menu2.png" style="width:120px; margin-top: 20px; margin-left : 10px; float: left;">
     </div>
     <div id="m4" class="box1" style="top: 250px; background-color: rgb(20, 73, 107)">
       <div>가이드</div>
       <img src="./images/menu3.svg" style="width:120px; text-align: center; margin-top: 25px;">
     </div>
-
-
-
-
-
-    <div
-    style="text-align: center; border: 1px solid aliceblue; position: relative; height: 1000px; background-color: aliceblue;">
-    <div style="width: 1000px; height: 180px; ">
-
-    </div>
-    <div class="youdiv">
-      <div class="youfont1">
-        | 다양한 국가별 강사
-      </div>
-
-      <div class="youfont3">
-        헬로우월드클래스
-      </div>
-      
-    </div>
-
    
-
-    <div class="youtubeclass1" style="height: 550px">
-      <div
-        style="border-radius: 10px 10px 0px 0px; float: left; background-color: rgb(217,217,217); width:100%; height: 30px;">
+    <img src="./images/padding.png" style="width:100%; height: 100px; text-align: center;">
+    <div
+      style="text-align: center; position: relative; height: 1000px;">
+      <div style="width: 1000px; height: 5vh; ">
 
       </div>
-      <div id="map"></div>
-    </div>
+      <div class="youdiv" >
+        <div class="youfont1">
+          | 친절한 강사와 함께하는
+        </div>
+
+        <div class="youfont3">
+          유튜브클래스
+        </div>
+      
+      </div>
+
+     
+      <div style="margin: auto; height: 2000px; width: 1000px; border : 1px solid red">
+        
+      
+       <div style="width : 100%;  text-align: left;">
+      500,000명의 강사들이 있습니다</div>
+      <div OnClick="location.href ='./teacher.html'" style="float : left; width : 33.1%; height : 100px; background-color: rgb(242,242,242); font-weight: bolder; line-height: 100px; font-size: larger;">
+      지역</div>
+      <div style="float: left; height: 100px;width : 1px; border : 1px solid rgb(199, 199, 199);"></div>
+      <div OnClick="location.href ='./teacher.html'" style="float : left; width : 33.1%; height : 100px; background-color: rgb(242,242,242); font-weight: bolder; line-height: 100px; font-size: larger;">
+        강사 국가</div>
+        <div style="float: left; height: 100px;width : 1px; border : 1px solid rgb(199, 199, 199);"></div>
+        <div OnClick="location.href ='./teacher.html'" style="float : left; width : 33.1%; height : 100px; background-color: rgb(242,242,242); font-weight: bolder; line-height: 100px; font-size: larger;">
+          강사 성별</div>
+          <div style="width : 100%; text-align: left;">
+            서울특별시 > 아프리카 > 튀니지 > 여성</div>
+
+            <div OnClick="location.href =''" style="margin-top: 15px;float : left; width : 23%; height : 350px; background-color: rgb(242,242,242); font-weight: bolder; line-height: 100px; font-size: larger;">
+            </div>
   </div>
 
 
 
-
-
-
-
-
-
-
-
-
-  </div>
 
   <!-- Footer -->
   <footer class="text-center text-lg-start bg-white text-muted">
@@ -160,7 +161,7 @@
               소개
             </h6>
             <p>
-              <a href="introduce.html" class="text-reset">헬로우월드클래스</a>
+            <a href="introduce.html" class="text-reset">헬로우월드클래스</a>
             </p>
             <p>
               <a href="#!" class="text-reset">이용약관</a>
@@ -246,6 +247,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
 
   <script type="text/javascript" src="./script.js?ver=123"></script>
+
 </body>
 
 

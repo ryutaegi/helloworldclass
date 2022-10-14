@@ -275,140 +275,6 @@ function initMap() {
 }
 
 
-var loginn = JSON.parse(localStorage.getItem("cast"))
-if(loginn["login10"]==1)
-{
-  const element = document.getElementById('log');
-  element.innerHTML 
-  = '&nbsp&nbsp&nbsp&nbsp로그아웃&nbsp&nbsp&nbsp&nbsp';
-  const element1 = document.getElementById('log1');
-  element1.innerHTML 
-  = '로그아웃';
-}
-else{
-  const element = document.getElementById('log');
-  element.innerHTML 
-  = '&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp로그인&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp';
-  const element1 = document.getElementById('log1');
-  element1.innerHTML 
-  = '로그인';
-
-}
-function logclick(){
-
- 
-if(loginn["login10"]==1)
-{
-  cast = {
-    "login10" : 0,
-};
-localStorage.setItem("cast", JSON.stringify(cast));
- location.href = "./index.html";
-}
-else{
-location.href = "./login.html";
-}
-
-// Json Object를 저장하기
-
-}
-var teach = document.getElementById("teach");
-var m2 = document.getElementById("m2");
-teach.addEventListener("click",function teachclick(){
- if(loginn["login10"]==1)
- {
-  location.href = "./teacher.html";
- }
- else{
-  Swal.fire({
-    title: '로그인 후 서비스 이용이 가능합니다',
-    height: 500,
-    width : 500,
-    imageUrl: "./images/helloworldclass1.png",
-    showCancelButton: true,
-    confirmButtonColor: '#3085d6',
-    cancelButtonColor: '#d33',
-    confirmButtonText: '로그인 페이지로 이동',
-    cancelButtonText: '취소',
-  }).then((result) => {
-    if (result.value) {
-      location.href = "./login.html";  //"삭제" 버튼을 눌렀을 때 작업할 내용을 이곳에 넣어주면 된다. 
-    }
-  })
- }
-
-})
-m2.addEventListener("click",function teachclick(){
-  if(loginn["login10"]==1)
-  {
-   location.href = "./teacher.html";
-  }
-  else{
-   Swal.fire({
-     title: '로그인 후 서비스 이용이 가능합니다',
-     height: 500,
-     width : 500,
-     imageUrl: "./images/helloworldclass1.png",
-     showCancelButton: true,
-     confirmButtonColor: '#3085d6',
-     cancelButtonColor: '#d33',
-     confirmButtonText: '로그인 페이지로 이동',
-     cancelButtonText: '취소',
-   }).then((result) => {
-     if (result.value) {
-       location.href = "./login.html";  //"삭제" 버튼을 눌렀을 때 작업할 내용을 이곳에 넣어주면 된다. 
-     }
-   })
-  }
- 
- })
-window.addEventListener("wheel", function(e){
-	e.preventDefault();
-},{passive : false});
-window.onload = function(){
-  const elm = document.querySelectorAll('.section1');
-  const elmCount = elm.length;
-  elm.forEach(function(item, index){
-    item.addEventListener('mousewheel', function(event){
-      event.preventDefault();
-      let delta = 0;
-
-      if (!event) event = window.event;
-      if (event.wheelDelta) {
-          delta = event.wheelDelta / 120;
-          if (window.opera) delta = -delta;
-      } 
-      else if (event.detail)
-          delta = -event.detail / 3;
-
-      let moveTop = window.scrollY;
-      let elmSelector = elm[index];
-
-      // wheel down : move to next section
-      if (delta < 0){
-        if (elmSelector !== elmCount-1){
-          try{
-          
-            moveTop = window.pageYOffset + elmSelector.nextElementSibling.getBoundingClientRect().top;
-          }catch(e){}
-        }
-      }
-      
-      // wheel up : move to previous section
-      else{
-        if (elmSelector !== 0){
-          try{
-            moveTop = window.pageYOffset + elmSelector.previousElementSibling.getBoundingClientRect().top;
-          }catch(e){}
-        }
-      }
-   
-
-      const body = document.querySelector('html');
-      window.scrollTo({top:moveTop, left:0, behavior:'smooth'});
-    });
-  });
-}
 
 var map1 = document.getElementById("map1");
 var mapdiv = document.getElementById("mapdiv");
@@ -493,3 +359,93 @@ before.addEventListener("mouseover", function (e) {
     
   });
 });
+var loginn = { "login10" : 0 }
+loginn = JSON.parse(localStorage.getItem("cast"))
+
+if(loginn["login10"]==1)
+{
+  const element = document.getElementById('log');
+  element.innerHTML 
+  = '&nbsp&nbsp&nbsp&nbsp로그아웃&nbsp&nbsp&nbsp&nbsp';
+  const element1 = document.getElementById('log1');
+  element1.innerHTML 
+  = '로그아웃';
+}
+else{
+  const element = document.getElementById('log');
+  element.innerHTML 
+  = '&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp로그인&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp';
+  const element1 = document.getElementById('log1');
+  element1.innerHTML 
+  = '로그인';
+
+}
+
+function logclick(){
+ 
+if(loginn["login10"]==1)
+{
+  cast = {
+    "login10" : 0,
+};
+localStorage.setItem("cast", JSON.stringify(cast));
+ location.href = "./index.html";
+}
+else{
+location.href = "./login.html";
+}
+
+// Json Object를 저장하기
+
+}
+var teach = document.getElementById("teach");
+var m2 = document.getElementById("m2");
+teach.addEventListener("click",function (e){
+ if(loginn["login10"]==1)
+ {
+  location.href = "./teach.html";
+ }
+ else{
+  Swal.fire({
+    title: '로그인 후 서비스 이용이 가능합니다',
+    height: 500,
+    width : 500,
+    imageUrl: "./images/helloworldclass1.png",
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: '로그인 페이지로 이동',
+    cancelButtonText: '취소',
+  }).then((result) => {
+    if (result.value) {
+      location.href = "./login.html";  //"삭제" 버튼을 눌렀을 때 작업할 내용을 이곳에 넣어주면 된다. 
+    }
+  })
+ }
+
+})
+m2.addEventListener("click",function (e){
+  if(loginn["login10"]==1)
+  {
+   location.href = "./teach.html";
+  }
+  else{
+   Swal.fire({
+     title: '로그인 후 서비스 이용이 가능합니다',
+     height: 500,
+     width : 500,
+     imageUrl: "./images/helloworldclass1.png",
+     showCancelButton: true,
+     confirmButtonColor: '#3085d6',
+     cancelButtonColor: '#d33',
+     confirmButtonText: '로그인 페이지로 이동',
+     cancelButtonText: '취소',
+   }).then((result) => {
+     if (result.value) {
+       location.href = "./login.html";  //"삭제" 버튼을 눌렀을 때 작업할 내용을 이곳에 넣어주면 된다. 
+     }
+   })
+  }
+ 
+ })
+

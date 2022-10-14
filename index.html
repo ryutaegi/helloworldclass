@@ -26,7 +26,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
-
+  <link href="./images/helloworldclass.png" rel="shortcut icon" type="image/x-icon">
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -54,8 +54,8 @@
       <ul class="nav-links">
         <li onclick="logclick()" id="log1" style="font-weight: bold;">로그인</li>
         <li ><a href="#">홈</a></li>
-        <li id="teach" style="font-weight: bold;">강사찾기</li>
-        <li><a href="application.html">커뮤니티</a></li>
+        <li id="teach" style="font-weight: bold;">강사 찾기</li>
+        <li><a href="application.html">강사 등록</a></li>
         <li><a href="detail.html">가이드</a></li>
 
       </ul>
@@ -70,11 +70,11 @@
     <div id="m1" class="box1" style="background-color: white; color: black;">Home</div>
     <div id="m2" class="box1" style="top: 150px; background-color: rgb(224, 30, 54);">
       <div>강사 찾기</div>
-      <img src="./images/menu1.svg" style="width:120px; margin-top: 30px; margin-left : 10px; float: left;">
+      <img src="./images/menu1.svg" style="width:120px; margin-top: 20px; margin-left : 10px; float: left;">
     </div>
     <div id="m3" class="box1" style="top: 200px; background-color: rgb(248, 157, 42)">
-      <div>커뮤니티</div>
-      <img src="./images/menu2.svg" style="width:120px; margin-top: 40px; margin-left : 10px; float: left;">
+      <div>강사 등록</div>
+      <img src="./images/menu2.png" style="width:120px; margin-top: 20px; margin-left : 10px; float: left;">
     </div>
     <div id="m4" class="box1" style="top: 250px; background-color: rgb(20, 73, 107)">
       <div>가이드</div>
@@ -209,7 +209,7 @@
   <div class="section1">
     <div
       style="text-align: center; border: 1px solid aliceblue; position: relative; height: 1000px; background-color: aliceblue;">
-      <div style="width: 1000px; height: 80px; ">
+      <div style="width: 1000px; height: 5vh; ">
 
       </div>
       <div class="youdiv" >
@@ -287,9 +287,9 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination" ></div>
       </div>
-      <div style="margin: auto;">
+      <div style="margin: auto; height: 500px; width: 1000px;">
         
-      <div class="youdiv1" style="height: 350px; margin-left: 24%; margin-top: 15px;" >
+      <div class="youdiv1" style="height: 350px; margin-top: 15px;" >
         <div class="youfont1">
           | 헬로우월드클래스
         </div>
@@ -333,7 +333,7 @@
   </div>
 <div class="section1" >
     <div class="inclass">
-      <div style="width: 1000px; height: 80px; ">
+      <div style="width: 1000px; height: 7vh; ">
 
       </div>
       <div class="youdiv">
@@ -642,7 +642,56 @@
   </footer>
   <!-- Footer -->
 
+<script>
+  
+window.addEventListener("wheel", function(e){
+	e.preventDefault();
+},{passive : false});
+window.onload = function(){
+  const elm = document.querySelectorAll('.section1');
+  const elmCount = elm.length;
+  elm.forEach(function(item, index){
+    item.addEventListener('mousewheel', function(event){
+      event.preventDefault();
+      let delta = 0;
 
+      if (!event) event = window.event;
+      if (event.wheelDelta) {
+          delta = event.wheelDelta / 120;
+          if (window.opera) delta = -delta;
+      } 
+      else if (event.detail)
+          delta = -event.detail / 3;
+
+      let moveTop = window.scrollY;
+      let elmSelector = elm[index];
+
+      // wheel down : move to next section
+      if (delta < 0){
+        if (elmSelector !== elmCount-1){
+          try{
+          
+            moveTop = window.pageYOffset + elmSelector.nextElementSibling.getBoundingClientRect().top;
+          }catch(e){}
+        }
+      }
+      
+      // wheel up : move to previous section
+      else{
+        if (elmSelector !== 0){
+          try{
+            moveTop = window.pageYOffset + elmSelector.previousElementSibling.getBoundingClientRect().top;
+          }catch(e){}
+        }
+      }
+   
+
+      const body = document.querySelector('html');
+      window.scrollTo({top:moveTop, left:0, behavior:'smooth'});
+    });
+  });
+}
+</script>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
