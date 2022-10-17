@@ -8,13 +8,12 @@
   line-height: 100px; 
   font-size: larger;
   text-align: center;
+  margin-left: 5px;
 }
 .teacherimg{
-
   width: 200px;
   max-height: 150px;
-  
-  display: inline-block;
+  float: left;
  /* height: auto; 이걸로 할지 고민중/ 이번달 클래스 증명사진 비율도 조정할 것
   width: 90%;*/
   background-color: white;
@@ -24,4 +23,55 @@
 .teacherimg img{
   max-height: initial;
   margin-top: -15%;
+}
+.teacherflag{
+margin-top: -20px;
+  float: left;
+  margin-left: 5px;
+width:auto;
+height: 40px;
+}
+.teacherflag img{
+ height: 100%;
+}
+.teachername1{
+  font-weight: bold;
+  float: left;
+  margin-top: -28px;
+  margin-left: 3px;
+}
+.teachername2{
+  font-weight:100;
+  float: left;
+  margin-top: -80px;
+  margin-left: 70px;
+  font-size: small;
+}
+.teachercontent1{
+  font-weight: 100;
+  float: left;
+  font-size: small;
+  margin-left: 30px;
+  margin-top: -70px;
+}
+.teachercontent2{
+  font-weight: 100;
+  float: left;
+  font-size: small;
+  margin-left: 30px;
+  margin-top: -80px;
+}
+.teachercontent3{
+  font-weight: 100;
+  float: left;
+  font-size: small;
+  margin-left: -65px;
+  margin-top: -60px;
+}
+.teachercontent4{
+  font-weight: 100;
+  float: left;
+  font-size: small;
+  margin-left: 29px;
+  margin-top: -80px;
 }
