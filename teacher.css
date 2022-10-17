@@ -1,0 +1,27 @@
+.teacherdiv{
+  margin-top: 15px;
+  float : left;
+   width : 200px;
+   height : 300px;
+  background-color: rgb(242,242,242); 
+  font-weight: bolder; 
+  line-height: 100px; 
+  font-size: larger;
+  text-align: center;
+}
+.teacherimg{
+
+  width: 200px;
+  max-height: 150px;
+  
+  display: inline-block;
+ /* height: auto; 이걸로 할지 고민중/ 이번달 클래스 증명사진 비율도 조정할 것
+  width: 90%;*/
+  background-color: white;
+
+  overflow: hidden;
+}
+.teacherimg img{
+  max-height: initial;
+  margin-top: -15%;
+}
