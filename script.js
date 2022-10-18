@@ -276,90 +276,9 @@ function initMap() {
 
 
 
-var map1 = document.getElementById("map1");
-var mapdiv = document.getElementById("mapdiv");
-var before = document.getElementById("before");
-var next = document.getElementById("next");
 
-mapdiv.addEventListener("mouseover", function (e) {
-  
-    gsap.to("#map1", {
-      y : -300
-    });
-    gsap.to("#map2", {
-      y : -300
-    });
-    gsap.to("#map3", {
-      y : -1000
-    });
-    gsap.to("#map4", {
-      
-      y : -250
-      
-    });
-    gsap.to("#map5", {
-      x : -600,
-      y : -300
-      
-    });
-    gsap.to("#map6", {
-     
-      y : -700
-      
-    });
-   
-});
-
-next.addEventListener("mouseover", function (e) {
-  
-  gsap.to("#map1", {
-    y : 300
-  });
-  gsap.to("#map2", {
-    y : 300
-  });
-  gsap.to("#map3", {
-    y : -200
-  });
-  gsap.to("#map4", {
-    
-    y : 300
-  });
-  gsap.to("#map5", {
-    y : 300
-  });
-  gsap.to("#map6", {
-     
-    y : 0
-    
-  });
-
-});
-before.addEventListener("mouseover", function (e) {
-  
-  gsap.to("#map1", {
-    y : 300
-  });
-  gsap.to("#map2", {
-    y : 300
-  });
-  gsap.to("#map3", {
-    y : -200
-  });
-  gsap.to("#map4", {
-    
-    y : 300
-  });
-  gsap.to("#map5", {
-    y : 300
-  });
-  gsap.to("#map6", {
-     
-    y : 0
-    
-  });
-});
 var loginn = { "login10" : 0 }
+
 loginn = JSON.parse(localStorage.getItem("cast"))
 
 if(loginn["login10"]==1)
@@ -399,7 +318,9 @@ location.href = "./login.html";
 
 }
 var teach = document.getElementById("teach");
+var regist = document.getElementById("regist");
 var m2 = document.getElementById("m2");
+var m3 = document.getElementById("m3");
 teach.addEventListener("click",function (e){
  if(loginn["login10"]==1)
  {
@@ -448,3 +369,54 @@ m2.addEventListener("click",function (e){
   }
  
  })
+
+ regist.addEventListener("click",function (e){
+  if(loginn["login10"]==1)
+  {
+   location.href = "./regist.html";
+  }
+  else{
+   Swal.fire({
+     title: '로그인 후 서비스 이용이 가능합니다',
+     height: 500,
+     width : 500,
+     imageUrl: "./images/helloworldclass1.png",
+     showCancelButton: true,
+     confirmButtonColor: '#3085d6',
+     cancelButtonColor: '#d33',
+     confirmButtonText: '로그인 페이지로 이동',
+     cancelButtonText: '취소',
+   }).then((result) => {
+     if (result.value) {
+       location.href = "./login.html";  //"확인" 버튼을 눌렀을 때 작업할 내용을 이곳에 넣어주면 된다. 
+     }
+   })
+  }
+ 
+ })
+ m3.addEventListener("click",function (e){
+   if(loginn["login10"]==1)
+   {
+    location.href = "./regist.html";
+   }
+   else{
+    Swal.fire({
+      title: '로그인 후 서비스 이용이 가능합니다',
+      height: 500,
+      width : 500,
+      imageUrl: "./images/helloworldclass1.png",
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: '로그인 페이지로 이동',
+      cancelButtonText: '취소',
+    }).then((result) => {
+      if (result.value) {
+        location.href = "./login.html";  //"확인" 버튼을 눌렀을 때 작업할 내용을 이곳에 넣어주면 된다. 
+      }
+    })
+   }
+  
+  })
+
+

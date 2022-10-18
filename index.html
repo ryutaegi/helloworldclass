@@ -15,14 +15,14 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">	
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css">	
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
-          <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-          	  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-              <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
-              <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
-              <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
@@ -32,9 +32,9 @@
 </head>
 
 <body>
-  <script> 
+  <script>
     AOS.init(); 
-</script>
+  </script>
   <div style="overflow: hidden;">
     <nav>
       <div style="width: 100%; right: 0px;">
@@ -42,20 +42,21 @@
         <div class="logo" style="flex-direction: row;">
 
 
-          <a href="index.html"><img  class="logoss" src="./images/helloworldclass.png" ></a>
+          <a href="index.html"><img class="logoss" src="./images/helloworldclass.png"></a>
           <ul class="nav-linkss" style="float: right;">
-            <li onclick="logclick()" id="log" style="margin-right: 40px; color : black; background-color: white; border-radius: 10px; border:7px solid white; font-weight: bolder; ">
+            <li onclick="logclick()" id="log"
+              style="margin-right: 40px; color : black; background-color: white; border-radius: 10px; border:7px solid white; font-weight: bolder; ">
               &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp로그인&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
-            </ul>
+          </ul>
         </div>
 
       </div>
 
       <ul class="nav-links">
         <li onclick="logclick()" id="log1" style="font-weight: bold;">로그인</li>
-        <li ><a href="#">홈</a></li>
+        <li><a href="#">홈</a></li>
         <li id="teach" style="font-weight: bold;">강사 찾기</li>
-        <li><a href="application.html">강사 등록</a></li>
+        <li id="regist">강사 등록</li>
         <li><a href="detail.html">가이드</a></li>
 
       </ul>
@@ -80,120 +81,120 @@
       <div>가이드</div>
       <img src="./images/menu3.svg" style="width:120px; text-align: center; margin-top: 25px;">
     </div>
-   
 
 
 
-  <div class="section1">
-    <!-- carousel를 구성할 영역 설정 -->
-    <div id = "before"style="width: 100%;">
-      <!-- carousel를 사용하기 위해서는 class에 carousel와 slide 설정한다. -->
-      <!-- carousel는 특이하게 id를 설정해야 한다.-->
-      <div id="carousel-example-generic" class="carousel slide">
-        <!-- carousel의 지시자 -->
-        <!-- 지시자라고는 하는데 ol태그의 class에 carousel-indicators를 넣는다. -->
-        <ol class="carousel-indicators">
-          <!-- li는 이미지 개수만큼 추가하고 data-target은 carousel id를 가르킨다. -->
-          <!-- data-slide-to는 순서대로 0부터 올라가고 0은 active를 설정한다. -->
-          <!-- 딱히 이 부분은 옵션별로 설정하게 없다. -->
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="7"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="8"></li>
-        </ol>
-        <!-- 실제 이미지 아이템 -->
-        <!-- class는 carousel-inner로 설정하고 role은 listbox에서 설정한다. -->
-        <div class="carousel-inner" role="listbox">
-          <!-- 이미지의 개수만큼 item을 만든다. 중요한 포인트는 carousel-indicators의 li 태그 개수와 item의 개수는 일치해야 한다. -->
-          <div OnClick="location.href =''" class="item active">
-            <!-- 아미지 설정- -->
-            <img src="./images/배너/1.png" style="width:100%">
-            <!-- 캡션 설정 (생략 가능) -->
-            <!-- 글자 색은 검은색 -->
 
+    <div class="section1">
+      <!-- carousel를 구성할 영역 설정 -->
+      <div id="before" style="width: 100%;">
+        <!-- carousel를 사용하기 위해서는 class에 carousel와 slide 설정한다. -->
+        <!-- carousel는 특이하게 id를 설정해야 한다.-->
+        <div id="carousel-example-generic" class="carousel slide">
+          <!-- carousel의 지시자 -->
+          <!-- 지시자라고는 하는데 ol태그의 class에 carousel-indicators를 넣는다. -->
+          <ol class="carousel-indicators">
+            <!-- li는 이미지 개수만큼 추가하고 data-target은 carousel id를 가르킨다. -->
+            <!-- data-slide-to는 순서대로 0부터 올라가고 0은 active를 설정한다. -->
+            <!-- 딱히 이 부분은 옵션별로 설정하게 없다. -->
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="8"></li>
+          </ol>
+          <!-- 실제 이미지 아이템 -->
+          <!-- class는 carousel-inner로 설정하고 role은 listbox에서 설정한다. -->
+          <div class="carousel-inner" role="listbox">
+            <!-- 이미지의 개수만큼 item을 만든다. 중요한 포인트는 carousel-indicators의 li 태그 개수와 item의 개수는 일치해야 한다. -->
+            <div OnClick="location.href =''" class="item active">
+              <!-- 아미지 설정- -->
+              <img src="./images/배너/1.png" style="width:100%">
+              <!-- 캡션 설정 (생략 가능) -->
+              <!-- 글자 색은 검은색 -->
+
+            </div>
+            <div OnClick="location.href =''" class="item">
+              <img src="./images/배너/2.jpg" style="width:100%">
+
+            </div>
+            <div OnClick="location.href =''" class="item">
+              <img src="./images/배너/3.jpg" style="width:100%">
+
+            </div>
+            <div OnClick="location.href =''" class="item">
+              <img src="./images/배너/4.jpg" style="width:100%">
+
+            </div>
+            <div OnClick="location.href =''" class="item">
+              <img src="./images/배너/5.jpg" style="width:100%">
+            </div>
+
+            <div OnClick="location.href =''" class="item">
+              <img src="./images/배너/6.jpg" style="width:100%">
+            </div>
+
+            <div OnClick="location.href =''" class="item">
+              <img src="./images/배너/7.jpg" style="width:100%">
+            </div>
+
+            <div OnClick="location.href =''" class="item">
+              <img src="./images/배너/8.jpg" style="width:100%">
+            </div>
+
+            <div OnClick="location.href =''" class="item">
+              <img src="./images/배너/9.jpg" style="width:100%">
+            </div>
           </div>
-          <div OnClick="location.href =''" class="item">
-            <img src="./images/배너/2.jpg" style="width:100%">
-
-          </div>
-          <div OnClick="location.href =''" class="item">
-            <img src="./images/배너/3.jpg" style="width:100%">
-
-          </div>
-          <div OnClick="location.href =''" class="item">
-            <img src="./images/배너/4.jpg" style="width:100%">
-
-          </div>
-          <div OnClick="location.href =''" class="item">
-            <img src="./images/배너/5.jpg" style="width:100%">
-          </div>
-
-          <div OnClick="location.href =''" class="item">
-            <img src="./images/배너/6.jpg" style="width:100%">
-          </div>
-
-          <div OnClick="location.href =''" class="item">
-            <img src="./images/배너/7.jpg" style="width:100%">
-          </div>
-
-          <div OnClick="location.href =''" class="item">
-            <img src="./images/배너/8.jpg" style="width:100%">
-          </div>
-
-          <div OnClick="location.href =''" class="item">
-            <img src="./images/배너/9.jpg" style="width:100%">
-          </div>
+          <!-- 왼쪽 화살표 버튼 -->
+          <!-- href는 carousel의 id를 가르킨다. -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <!-- 왼쪽 화살표 -->
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          </a>
+          <!-- 오른쪽 화살표 버튼 -->
+          <!-- href는 carousel의 id를 가르킨다. -->
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <!-- 오른쪽 화살표 -->
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          </a>
         </div>
-        <!-- 왼쪽 화살표 버튼 -->
-        <!-- href는 carousel의 id를 가르킨다. -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-          <!-- 왼쪽 화살표 -->
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        </a>
-        <!-- 오른쪽 화살표 버튼 -->
-        <!-- href는 carousel의 id를 가르킨다. -->
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-          <!-- 오른쪽 화살표 -->
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        </a>
       </div>
     </div>
-  </div>
-  <div class="section1" >
-    <div id="mapdiv" style=" position : relative; width: 100%; height: 1000px;">
-      <img id="map1" src="./images/map1.png" style="width:30%; float: left; margin-top: 100px;">
-      <img id="map2" src="./images/map2.png" style="width:38%; float: right;margin-right: 100px; margin-top: 100px;">
-      
-      <img id="map5" src="./images/map5.png" style="width:20%;  margin-left: 0px; margin-top: 800px; float : left;">
-      <img id="map3" src="./images/map3.png" style="width:40%;  margin-left: 18%; float: left; ">
-      <img id="map4" src="./images/map4.png" style="width:13%; ">
-      
-      <img id="map6" src="./images/map6.png" style="width:22%; float: right;">
+    <div class="section1">
+      <div id="mapdiv" style=" position : relative; width: 100%; height: 1000px;">
+        <img id="map1" src="./images/map1.png" style="width:30%; float: left; margin-top: 100px;">
+        <img id="map2" src="./images/map2.png" style="width:38%; float: right;margin-right: 100px; margin-top: 100px;">
 
-      <div contenteditable placeholder='다양한 국가의 선생님들을 검색해보세요.' class="searchbar" ></div>
-      <div class="searchbar1">
-        <span style="background-color: rgb(191, 191, 191); height : 45px; width : 4px; float: left;"></span>
-        <img src="./images/main21.svg" style="width:15%; margin-bottom: 2%; margin-right: 4%;">클래스 검색
-      </div>
-      <div class="searchbar2" style="margin-top: 2%; background-color: rgb(255, 255, 255); height: 0px;">
-        <img src="./images/main23.png" style="width:99%; 
+        <img id="map5" src="./images/map5.png" style="width:20%;  margin-left: 0px; margin-top: 800px; float : left;">
+        <img id="map3" src="./images/map3.png" style="width:40%;  margin-left: 18%; float: left; ">
+        <img id="map4" src="./images/map4.png" style="width:13%; ">
+
+        <img id="map6" src="./images/map6.png" style="width:22%; float: right;">
+
+        <div contenteditable placeholder='다양한 국가의 선생님들을 검색해보세요.' class="searchbar"></div>
+        <div class="searchbar1">
+          <span style="background-color: rgb(191, 191, 191); height : 45px; width : 4px; float: left;"></span>
+          <img src="./images/main21.svg" style="width:15%; margin-bottom: 2%; margin-right: 4%;">클래스 검색
+        </div>
+        <div class="searchbar2" style="margin-top: 2%; background-color: rgb(255, 255, 255); height: 0px;">
+          <img src="./images/main23.png" style="width:99%; 
          color: rgb(191,191,191);">
+        </div>
+
       </div>
 
+      <img src="./images/main122.png" style="width:100%;">
     </div>
-  
-  <img src="./images/main122.png" style="width:100%;">
-</div>
 
-  <div class="section1" >
-    <div id="next" style="position: relative;">
-      <img src="./images/main22.png" style="width:100%;">
-      <img OnClick="location.href ='application.html'" src="./images/main24.png" style="
+    <div class="section1">
+      <div id="next" style="position: relative;">
+        <img src="./images/main22.png" style="width:100%;">
+        <img OnClick="location.href ='application.html'" src="./images/main24.png" style="
       width:30%;  position: absolute;
       top: 76%;
        left: 35%; 
@@ -202,507 +203,509 @@
        border-radius: 7px;">
 
 
-    </div>
-  </div>
- 
-
-  <div class="section1">
-    <div
-      style="text-align: center; position: relative; height: 1000px;">
-      <div style="width: 1000px; height: 5vh; ">
-
-      </div>
-      <div class="youdiv" >
-        <div class="youfont1">
-          | 친절한 강사와 함께하는
-        </div>
-
-        <div class="youfont3">
-          유튜브클래스
-        </div>
-      
-      </div>
-
-      <!-- Swiper -->
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./images/썸네일/2_학생.png">
-            <div class="slidemenu">
-              학생들이 들려주는 후기
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/썸네일/1_노라.png">
-            <div class="slidemenu">
-              노라쌤의 브이로그
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/썸네일/3_예진.png">
-            <div class="slidemenu">
-              예진쌤의 브이로그
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/slide1.png">
-            <div class="slidemenu">
-              슬라이드 4
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/slide1.png">
-            <div class="slidemenu">
-              슬라이드 5
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/slide1.png">
-            <div class="slidemenu">
-              슬라이드 6
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/slide1.png">
-            <div class="slidemenu">
-              슬라이드 7
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/slide1.png">
-            <div class="slidemenu">
-              슬라이드 8
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/slide1.png">
-            <div class="slidemenu">
-              슬라이드 9
-            </div>
-          </div>
-
-
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination" ></div>
-      </div>
-      <div style="margin: auto; height: 500px; width: 1000px;">
-        
-      <div class="youdiv1" style="height: 350px; margin-top: 15px;" >
-        <div class="youfont1">
-          | 헬로우월드클래스
-        </div>
-
-        <div class="youfont3">
-          이용자의 생생한 후기
-        </div>
-      <img src="./images/point.png" style=" width: 400px; margin-top: 65px; float: left; margin-left: 10px;" >
-      
-    </div>
-      <div class="youtubeclass">
-        
-        <div
-          style="border-radius: 10px 10px 0px 0px; float: left; background-color: rgb(217,217,217); width:100%; height: 30px;">
-          <div style="float: right; line-height: 30px; margin-right: 10px; font-weight: bold;">후기 더보기 ></div>
-        </div>
-        <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 3%">
-          <img src="./images/pro1.png" style=" width: 50px; float : left">
-          <div style="text-align : left; margin-left: 70px; font-weight: bold; margin-top: 3px;">강사 | 보슈라 엘 갈리 | 튀니지
-          </div>
-          <div style="text-align : left; margin-left: 70px;">동대문중학교 학생들과 함께 튀니지의 문화와 ...</div>
-        </div>
-        <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 3%">
-          <img src="./images/pro2.png" style=" width: 50px; float : left">
-          <div style="text-align : left; margin-left: 70px; font-weight: bold; margin-top: 3px;">강사 | 케빈 | 미국</div>
-          <div style="text-align : left; margin-left: 70px;">게임을 통해서 배재중학교 학생들과세계시민교육 ...</div>
-        </div>
-        <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 3%">
-          <img src="./images/pro3.png" style=" width: 50px; float : left">
-          <div style="text-align : left; margin-left: 70px; font-weight: bold; margin-top: 3px;">교사 | 안은영 | 보성중</div>
-          <div style="text-align : left; margin-left: 70px;">프랑스에서 오신 강사님들 덕분에 학생들이 ...</div>
-        </div>
-        <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 3%">
-          <img src="./images/pro1.png" style=" width: 50px; float : left">
-          <div style="text-align : left; margin-left: 70px; font-weight: bold; margin-top: 3px;">학생 | 장현웅 | 배재고</div>
-          <div style="text-align : left; margin-left: 70px;">프랑스에서 오신 강사님들 덕분에 세계시민교육에 대하여 ...</div>
-        </div>
       </div>
     </div>
-  </div>
-  </div>
-<div class="section1" >
-    <div class="inclass">
-      <div style="width: 1000px; height: 7vh; ">
 
+
+    <div class="section1">
+      <div style="text-align: center; position: relative; height: 1000px;">
+        <div style="width: 1000px; height: 5vh; ">
+
+        </div>
+        <div class="youdiv">
+          <div class="youfont1">
+            | 친절한 강사와 함께하는
+          </div>
+
+          <div class="youfont3">
+            유튜브클래스
+          </div>
+
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/썸네일/2_학생.png">
+              <div class="slidemenu">
+                학생들이 들려주는 후기
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/썸네일/1_노라.png">
+              <div class="slidemenu">
+                노라쌤의 브이로그
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/썸네일/3_예진.png">
+              <div class="slidemenu">
+                예진쌤의 브이로그
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slide1.png">
+              <div class="slidemenu">
+                슬라이드 4
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slide1.png">
+              <div class="slidemenu">
+                슬라이드 5
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slide1.png">
+              <div class="slidemenu">
+                슬라이드 6
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slide1.png">
+              <div class="slidemenu">
+                슬라이드 7
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slide1.png">
+              <div class="slidemenu">
+                슬라이드 8
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slide1.png">
+              <div class="slidemenu">
+                슬라이드 9
+              </div>
+            </div>
+
+
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div style="margin: auto; height: 500px; width: 1000px;">
+
+          <div class="youdiv1" style="height: 350px; margin-top: 15px;">
+            <div class="youfont1">
+              | 헬로우월드클래스
+            </div>
+
+            <div class="youfont3">
+              이용자의 생생한 후기
+            </div>
+            <img src="./images/point.png" style=" width: 400px; margin-top: 65px; float: left; margin-left: 10px;">
+
+          </div>
+          <div class="youtubeclass">
+
+            <div
+              style="border-radius: 10px 10px 0px 0px; float: left; background-color: rgb(217,217,217); width:100%; height: 30px;">
+              <div style="float: right; line-height: 30px; margin-right: 10px; font-weight: bold;">후기 더보기 ></div>
+            </div>
+            <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 3%">
+              <img src="./images/pro1.png" style=" width: 50px; float : left">
+              <div style="text-align : left; margin-left: 70px; font-weight: bold; margin-top: 3px;">강사 | 보슈라 엘 갈리 | 튀니지
+              </div>
+              <div style="text-align : left; margin-left: 70px;">동대문중학교 학생들과 함께 튀니지의 문화와 ...</div>
+            </div>
+            <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 3%">
+              <img src="./images/pro2.png" style=" width: 50px; float : left">
+              <div style="text-align : left; margin-left: 70px; font-weight: bold; margin-top: 3px;">강사 | 케빈 | 미국</div>
+              <div style="text-align : left; margin-left: 70px;">게임을 통해서 배재중학교 학생들과세계시민교육 ...</div>
+            </div>
+            <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 3%">
+              <img src="./images/pro3.png" style=" width: 50px; float : left">
+              <div style="text-align : left; margin-left: 70px; font-weight: bold; margin-top: 3px;">교사 | 안은영 | 보성중
+              </div>
+              <div style="text-align : left; margin-left: 70px;">프랑스에서 오신 강사님들 덕분에 학생들이 ...</div>
+            </div>
+            <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 3%">
+              <img src="./images/pro1.png" style=" width: 50px; float : left">
+              <div style="text-align : left; margin-left: 70px; font-weight: bold; margin-top: 3px;">학생 | 장현웅 | 배재고
+              </div>
+              <div style="text-align : left; margin-left: 70px;">프랑스에서 오신 강사님들 덕분에 세계시민교육에 대하여 ...</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="youdiv">
-        <div class="youfont1">
-          | 인기 강사 추천
-        </div>
-
-        <div class="youfont3">
-          이번달 클래스
-        </div>
-        <div class="youfont2">
-          강사 더보기 >
-        </div>
-      </div>
-      <!-- Swiper -->
-      <div class="swiper mySwiper2" style="height: 780px;">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="slidemenu2" style="text-align: center;">
-              <div class="classimg">
-                <img src="./images/증명사진/마동석.jpg" style="width: 100%;">
-              </div>
-              <div class="classflag">
-              <img src="./images/국기/미국.png" style="height: 100%">
-            </div>
-           
-              <div class="classcty">
-                미국
-              </div>
-              <div class="classname">
-                돈 리
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="slidemenu2" style="text-align: center;">
-              <div class="classimg">
-                <img src="./images/증명사진/유태기.png" style="width: 100%;">
-              </div>
-              <div class="classflag">
-              <img src="./images/국기/대한민국.png" style="height: 100%">
-            </div>
-           
-              <div class="classcty">
-                대한민국
-              </div>
-              <div class="classname">
-                아무개
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slidemenu2" style="text-align: center;">
-              <div class="classimg">
-                <img src="./images/증명사진/마동석.jpg" style="width: 100%;">
-              </div>
-              <div class="classflag">
-              <img src="./images/국기/캐나다.jpg" style="height: 100%">
-            </div>
-           
-              <div class="classcty">
-                캐나다
-              </div>
-              <div class="classname">
-                마석도
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slidemenu2" style="text-align: center;">
-              <div class="classimg">
-                <img src="./images/증명사진/마동석.jpg" style="width: 100%;">
-              </div>
-              <div class="classflag">
-              <img src="./images/국기/미국.png" style="height: 100%">
-            </div>
-           
-              <div class="classcty">
-                미국
-              </div>
-              <div class="classname">
-                케빈
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slidemenu2" style="text-align: center;">
-              <div class="classimg">
-                <img src="./images/증명사진/마동석.jpg" style="width: 100%;">
-              </div>
-              <div class="classflag">
-              <img src="./images/국기/미국.png" style="height: 100%">
-            </div>
-           
-              <div class="classcty">
-                미국
-              </div>
-              <div class="classname">
-                케빈
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slidemenu2" style="text-align: center;">
-              <div class="classimg">
-                <img src="./images/증명사진/마동석.jpg" style="width: 100%;">
-              </div>
-              <div class="classflag">
-              <img src="./images/국기/미국.png" style="height: 100%">
-            </div>
-           
-              <div class="classcty">
-                미국
-              </div>
-              <div class="classname">
-                케빈
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slidemenu2" style="text-align: center;">
-              <div class="classimg">
-                <img src="./images/증명사진/마동석.jpg" style="width: 100%;">
-              </div>
-              <div class="classflag">
-              <img src="./images/국기/미국.png" style="height: 100%">
-            </div>
-           
-              <div class="classcty">
-                미국
-              </div>
-              <div class="classname">
-                케빈
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slidemenu2" style="text-align: center;">
-              <div class="classimg">
-                <img src="./images/증명사진/마동석.jpg" style="width: 100%;">
-              </div>
-              <div class="classflag">
-              <img src="./images/국기/미국.png" style="height: 100%">
-            </div>
-           
-              <div class="classcty">
-                미국
-              </div>
-              <div class="classname">
-                케빈
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slidemenu2" style="text-align: center;">
-              <div class="classimg">
-                <img src="./images/증명사진/마동석.jpg" style="width: 100%;">
-              </div>
-              <div class="classflag">
-              <img src="./images/국기/미국.png" style="height: 100%">
-            </div>
-           
-              <div class="classcty">
-                미국
-              </div>
-              <div class="classname">
-                케빈
-              </div>
-            </div>
-          </div>
-      
-
-
-
-
-
-
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination" style="margin-bottom: 200px;"></div>
-      </div>
-
     </div>
-  </div>
+    <div class="section1">
+      <div class="inclass">
+        <div style="width: 1000px; height: 7vh; ">
 
-
-  <!-- Footer -->
-  <footer class="text-center text-lg-start bg-white text-muted">
-    <!-- Section: Social media -->
-    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-      <!-- Left -->
-
-      <!-- Left -->
-
-      <!-- Right -->
-
-      <!-- Right -->
-    </section>
-    <!-- Section: Social media -->
-
-    <!-- Section: Links  -->
-    <section class="">
-      <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <!-- Content -->
-            <h6 class="text-uppercase fw-bold mb-4" style="color: black;">헬로우월드클래스
-            </h6>
-            <p>
-              대표이사 : 000<br>
-              개인정보 책임 관리자 : 000<br>
-              사업자등록번호 : 0000000000000000000 <br>
-              통신판매업신고증 : 0000000000000000000 <br>
-              직업정보제공사업 신고번호 :000000000000000<br>
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              소개
-            </h6>
-            <p>
-            <a href="introduce.html" class="text-reset">헬로우월드클래스</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">이용약관</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">개인정보 처리방침</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">사업자 정보 확인</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              고객센터
-            </h6>
-            <p>
-              <a href="#!" class="text-reset">이용안내</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">공지사항</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">자주묻는 질문</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-            <p><i class="fas fa-home me-3 text-secondary"></i> 주소 : 00000000000000000000000000</p>
-            <p>
-              <i class="fas fa-envelope me-3 text-secondary"></i>
-              이메일 : 0000000000000@0000000
-            </p>
-            <p><i class="fas fa-phone me-3 text-secondary"></i> 012-345-6789<br>
-              평일 10 : 00 ~ 18 : 00<br>
-              (점심시간 12 : 00~ 13:00제외, 주말 공휴일 제외)</p>
-          </div>
-
-          <!-- Grid column -->
         </div>
-        <div class="footericon">
-          <a href="" class="me-4 link-secondary" style="height: 200px; width : 300px">
-            <i class="fab fa-facebook-f" style="height : 40px; width : 40px; margin-right: 20px;">
-            </i></a>
-          </a>
-          <a href="" class="me-4 link-secondary">
-            <i class="fab fa-twitter" style="height : 40px; width : 40px; margin-right: 20px;"></i>
-          </a>
-          <a href="" class="me-4 link-secondary">
-            <i class="fab fa-google" style="height : 40px; width : 40px; margin-right: 20px;"></i>
-          </a>
-          <a href="" class="me-4 link-secondary">
-            <i class="fab fa-instagram" style="height : 40px; width : 40px; margin-right: 20px;"></i>
-          </a>
-        </div>
-        <div style="margin-top: 30px; margin-bottom: 30px;">
+        <div class="youdiv">
+          <div class="youfont1">
+            | 인기 강사 추천
+          </div>
 
-          <img class="logos" src="./images/helloworldclass.png" style="width: 150px; margin-left: 0px;">
+          <div class="youfont3">
+            이번달 클래스
+          </div>
+          <div class="youfont2">
+            강사 더보기 >
+          </div>
         </div>
-        <!-- Grid row -->
+        <!-- Swiper -->
+        <div class="swiper mySwiper2" style="height: 780px;">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slidemenu2" style="text-align: center;">
+                <div class="classimg">
+                  <img src="./images/증명사진/마동석.jpg" style="width: 100%;">
+                </div>
+                <div class="classflag">
+                  <img src="./images/국기/미국.png" style="height: 100%">
+                </div>
+
+                <div class="classcty">
+                  미국
+                </div>
+                <div class="classname">
+                  돈 리
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="slidemenu2" style="text-align: center;">
+                <div class="classimg">
+                  <img src="./images/증명사진/유태기.png" style="width: 100%;">
+                </div>
+                <div class="classflag">
+                  <img src="./images/국기/대한민국.png" style="height: 100%">
+                </div>
+
+                <div class="classcty">
+                  대한민국
+                </div>
+                <div class="classname">
+                  아무개
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slidemenu2" style="text-align: center;">
+                <div class="classimg">
+                  <img src="./images/증명사진/마동석.jpg" style="width: 100%;">
+                </div>
+                <div class="classflag">
+                  <img src="./images/국기/캐나다.jpg" style="height: 100%">
+                </div>
+
+                <div class="classcty">
+                  캐나다
+                </div>
+                <div class="classname">
+                  마석도
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slidemenu2" style="text-align: center;">
+                <div class="classimg">
+                  <img src="./images/증명사진/마동석.jpg" style="width: 100%;">
+                </div>
+                <div class="classflag">
+                  <img src="./images/국기/미국.png" style="height: 100%">
+                </div>
+
+                <div class="classcty">
+                  미국
+                </div>
+                <div class="classname">
+                  케빈
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slidemenu2" style="text-align: center;">
+                <div class="classimg">
+                  <img src="./images/증명사진/마동석.jpg" style="width: 100%;">
+                </div>
+                <div class="classflag">
+                  <img src="./images/국기/미국.png" style="height: 100%">
+                </div>
+
+                <div class="classcty">
+                  미국
+                </div>
+                <div class="classname">
+                  케빈
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slidemenu2" style="text-align: center;">
+                <div class="classimg">
+                  <img src="./images/증명사진/마동석.jpg" style="width: 100%;">
+                </div>
+                <div class="classflag">
+                  <img src="./images/국기/미국.png" style="height: 100%">
+                </div>
+
+                <div class="classcty">
+                  미국
+                </div>
+                <div class="classname">
+                  케빈
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slidemenu2" style="text-align: center;">
+                <div class="classimg">
+                  <img src="./images/증명사진/마동석.jpg" style="width: 100%;">
+                </div>
+                <div class="classflag">
+                  <img src="./images/국기/미국.png" style="height: 100%">
+                </div>
+
+                <div class="classcty">
+                  미국
+                </div>
+                <div class="classname">
+                  케빈
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slidemenu2" style="text-align: center;">
+                <div class="classimg">
+                  <img src="./images/증명사진/마동석.jpg" style="width: 100%;">
+                </div>
+                <div class="classflag">
+                  <img src="./images/국기/미국.png" style="height: 100%">
+                </div>
+
+                <div class="classcty">
+                  미국
+                </div>
+                <div class="classname">
+                  케빈
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slidemenu2" style="text-align: center;">
+                <div class="classimg">
+                  <img src="./images/증명사진/마동석.jpg" style="width: 100%;">
+                </div>
+                <div class="classflag">
+                  <img src="./images/국기/미국.png" style="height: 100%">
+                </div>
+
+                <div class="classcty">
+                  미국
+                </div>
+                <div class="classname">
+                  케빈
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination" style="margin-bottom: 200px;"></div>
+        </div>
+
       </div>
-    </section>
-    <!-- Section: Links  -->
+    </div>
 
-    <div style="float : left; width: 90%; height : 10px; background-color :rgb(224, 30, 54)"> </div>
-    <div style="float : left; width: 5%; height : 10px; background-color : rgb(248, 157, 42)"> </div>
-    <div style="float : left;width: 5%; height : 10px; background-color :rgb(20, 73,170)"> </div>
 
-  </footer>
-  <!-- Footer -->
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
 
-<script>
-  
-window.addEventListener("wheel", function(e){
-	e.preventDefault();
-},{passive : false});
-window.onload = function(){
-  const elm = document.querySelectorAll('.section1');
-  const elmCount = elm.length;
-  elm.forEach(function(item, index){
-    item.addEventListener('mousewheel', function(event){
-      event.preventDefault();
-      let delta = 0;
+        <!-- Left -->
 
-      if (!event) event = window.event;
-      if (event.wheelDelta) {
-          delta = event.wheelDelta / 120;
-          if (window.opera) delta = -delta;
-      } 
-      else if (event.detail)
-          delta = -event.detail / 3;
+        <!-- Right -->
 
-      let moveTop = window.scrollY;
-      let elmSelector = elm[index];
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
 
-      // wheel down : move to next section
-      if (delta < 0){
-        if (elmSelector !== elmCount-1){
-          try{
-          
-            moveTop = window.pageYOffset + elmSelector.nextElementSibling.getBoundingClientRect().top;
-          }catch(e){}
-        }
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4" style="color: black;">헬로우월드클래스
+              </h6>
+              <p>
+                대표이사 : 000<br>
+                개인정보 책임 관리자 : 000<br>
+                사업자등록번호 : 0000000000000000000 <br>
+                통신판매업신고증 : 0000000000000000000 <br>
+                직업정보제공사업 신고번호 :000000000000000<br>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                소개
+              </h6>
+              <p>
+                <a href="introduce.html" class="text-reset">헬로우월드클래스</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">이용약관</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">개인정보 처리방침</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">사업자 정보 확인</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                고객센터
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">이용안내</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">공지사항</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">자주묻는 질문</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3 text-secondary"></i> 주소 : 00000000000000000000000000</p>
+              <p>
+                <i class="fas fa-envelope me-3 text-secondary"></i>
+                이메일 : 0000000000000@0000000
+              </p>
+              <p><i class="fas fa-phone me-3 text-secondary"></i> 012-345-6789<br>
+                평일 10 : 00 ~ 18 : 00<br>
+                (점심시간 12 : 00~ 13:00제외, 주말 공휴일 제외)</p>
+            </div>
+
+            <!-- Grid column -->
+          </div>
+          <div class="footericon">
+            <a href="" class="me-4 link-secondary" style="height: 200px; width : 300px">
+              <i class="fab fa-facebook-f" style="height : 40px; width : 40px; margin-right: 20px;">
+              </i></a>
+            </a>
+            <a href="" class="me-4 link-secondary">
+              <i class="fab fa-twitter" style="height : 40px; width : 40px; margin-right: 20px;"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+              <i class="fab fa-google" style="height : 40px; width : 40px; margin-right: 20px;"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+              <i class="fab fa-instagram" style="height : 40px; width : 40px; margin-right: 20px;"></i>
+            </a>
+          </div>
+          <div style="margin-top: 30px; margin-bottom: 30px;">
+
+            <img class="logos" src="./images/helloworldclass.png" style="width: 150px; margin-left: 0px;">
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <div style="float : left; width: 90%; height : 10px; background-color :rgb(224, 30, 54)"> </div>
+      <div style="float : left; width: 5%; height : 10px; background-color : rgb(248, 157, 42)"> </div>
+      <div style="float : left;width: 5%; height : 10px; background-color :rgb(20, 73,170)"> </div>
+
+    </footer>
+    <!-- Footer -->
+
+    <script>
+
+      window.addEventListener("wheel", function (e) {
+        e.preventDefault();
+      }, { passive: false });
+      window.onload = function () {
+        const elm = document.querySelectorAll('.section1');
+        const elmCount = elm.length;
+        elm.forEach(function (item, index) {
+          item.addEventListener('mousewheel', function (event) {
+            event.preventDefault();
+            let delta = 0;
+
+            if (!event) event = window.event;
+            if (event.wheelDelta) {
+              delta = event.wheelDelta / 120;
+              if (window.opera) delta = -delta;
+            }
+            else if (event.detail)
+              delta = -event.detail / 3;
+
+            let moveTop = window.scrollY;
+            let elmSelector = elm[index];
+
+            // wheel down : move to next section
+            if (delta < 0) {
+              if (elmSelector !== elmCount - 1) {
+                try {
+
+                  moveTop = window.pageYOffset + elmSelector.nextElementSibling.getBoundingClientRect().top;
+                } catch (e) { }
+              }
+            }
+
+            // wheel up : move to previous section
+            else {
+              if (elmSelector !== 0) {
+                try {
+                  moveTop = window.pageYOffset + elmSelector.previousElementSibling.getBoundingClientRect().top;
+                } catch (e) { }
+              }
+            }
+
+
+            const body = document.querySelector('html');
+            window.scrollTo({ top: moveTop, left: 0, behavior: 'smooth' });
+          });
+        });
       }
-      
-      // wheel up : move to previous section
-      else{
-        if (elmSelector !== 0){
-          try{
-            moveTop = window.pageYOffset + elmSelector.previousElementSibling.getBoundingClientRect().top;
-          }catch(e){}
-        }
-      }
-   
+    </script>
 
-      const body = document.querySelector('html');
-      window.scrollTo({top:moveTop, left:0, behavior:'smooth'});
-    });
-  });
-}
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-
-  <script type="text/javascript" src="./script.js?ver=123"></script>
-  <script src="app.js"></script>
+    <script type="text/javascript" src="./script.js?ver=123"></script>
+    <script type="text/javascript" src="./mapmotion.js"></script>
 
 </body>
 
 
-<script src="https://maps.google.com/maps/api/js?key=AIzaSyCHuqX7bycgOwECFxJ-gHWHtkASOhOdXEA&callback=initMap" type="text/javascript" async defer></script>
+<script src="https://maps.google.com/maps/api/js?key=AIzaSyCHuqX7bycgOwECFxJ-gHWHtkASOhOdXEA&callback=initMap"
+  type="text/javascript" async defer></script>
 
 </html>
