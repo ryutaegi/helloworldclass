@@ -29,3 +29,15 @@ function change3(){
   a3=0;
   }
 }
+function change4(){
+if(!(a1==1&&a2==1&&a3==1)){
+alert("모든 약관에 동의해주세요.")
+}
+else{
+  location.href = "./regist1.html";
+}
+}
+function registbt(){
+  alert("제출하였습니다")
+  location.href ='./index.html'
+  }
