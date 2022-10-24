@@ -55,7 +55,7 @@
         <li onclick="logclick()" id="log1" style="font-weight: bold;">로그인</li>
         <li><a href="#">홈</a></li>
         <li id="teach" style="font-weight: bold;">강사 찾기</li>
-        <li><a href="application.html">강사 등록</a></li>
+        <li><a href="regist.html">강사 등록</a></li>
         <li><a href="detail.html">가이드</a></li>
 
       </ul>
@@ -100,7 +100,9 @@
 
         <div style=" width:95%; height: 30px; margin: auto;">
           <span style="float: left; color: rgb(24,87, 126);">작성 가이드를 준수해주세요. 본문 수정이 요청될 수 있습니다.</span>
-          <span style="float: right;">작성 가이드 ></span></div>
+          <span id="show" style="float: right;">작성 가이드 ></span></div>
+
+          
 
 
         <div class="div1">
@@ -139,7 +141,7 @@
               <div style=" width:100%; height: 25px; text-align: left; ">
                 성별
               </div>
-              <div style="background-color: white; border: 1px solid rgb(217,217,217); color : rgb(235,235,235); width:100%; height: 27px;  text-align: left;">
+              <div style="background-color: white;  width:100%; height: 27px;  text-align: left;">
                 <select name="gender" style="width:100%; height: 27px;">
                   <option value="">선택</option>
                   <option value="남">남</option>
@@ -152,7 +154,7 @@
               <div style=" width:100%; height: 25px; text-align: left; ">
                 국가 선택
               </div>
-              <div style="background-color: white; border: 1px solid rgb(217,217,217); color : rgb(235,235,235); width:100%; height: 27px;  text-align: left;">
+              <div style="background-color: white;  width:100%; height: 27px;  text-align: left;">
                  <select name="counrty" style="width:100%; height: 27px;">
                   <option value="">국가 선택</option>
                   <option value="가나">가나</option>
@@ -291,7 +293,7 @@
   
               <div style="text-align: center; width:90%; height: 30px; margin: auto; color: rgb(127,127,127);">
                 * 항목은 필수사항입니다.</div>
-                <div OnClick="registbt()" style="text-align: center; font-weight: bold; width:95px;border-radius: 10px;line-height: 35px; height: 35px; margin: auto; background-color: rgb(191,191,191);">
+                <div id="show1" onclick="registbt()" style="text-align: center; font-weight: bold; width:95px;border-radius: 10px;line-height: 35px; height: 35px; margin: auto; background-color: rgb(191,191,191);">
                   제출</div>
           </div>
 
@@ -432,6 +434,34 @@
 
       </footer>
       <!-- Footer -->
+
+      <!-- 모달창 -->
+      <div class="background">
+        <div class="window">
+          <div class="popup">
+            <button id="close" style="float: right; right:0%; width: 25px; height: 25px; position:absolute;">X</button>
+            
+              <div style=" width:100%; height: 20px; margin: auto;"></div>
+              <div  style="margin: auto; font-size: 23px;
+              font-weight: bolder; width: 100%; text-align: center;"> 
+                강사 등록 서류 작성가이드
+              </div>
+              
+              <div style=" width:90%; height: 1px; margin: auto; background-color: rgb(165,165,165);"></div>
+           <!--  <div style="background-color: rgb(166, 166, 166); width:90%; height: 2px; margin: auto;"></div>-->
+           <div style="text-align: center; color: rgb(24,87, 126);">*작성 가이드를 준수해주세요. 본문 수정이 요청될 수 있습니다.</div>
+           <img src="./images/teach/guide1.png" style="width:80%; margin-top: 30px; text-align: center; margin-left: 10%; ">
+           <img src="./images/teach/guide2.png" style="width:80%; margin-top: 30px; text-align: center; margin-left: 10%; ">
+           <img src="./images/teach/guide3.png" style="width:80%; margin-top: 30px; text-align: center; margin-left: 10%; ">
+           <div style="float : left; width: 90%; height : 35px; "> </div>
+          
+           <div style="float : left; width: 90%; height : 10px; background-color :rgb(224, 30, 54)"> </div>
+           <div style="float : left; width: 5%; height : 10px; background-color : rgb(248, 157, 42)"> </div>
+           <div style="float : left;width: 5%; height : 10px; background-color :rgb(20, 73,170)"> </div>
+     
+            
+        <div>
+      <div>
 
 
 
