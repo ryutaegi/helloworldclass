@@ -144,3 +144,76 @@ textarea::placeholder {
 }
 
 
+/*새 모달*/
+#modal {
+  display: none;
+  position:fixed;
+  top: 20vh;
+  width:100%;
+  height:100%;
+  z-index:1;
+}
+#modal1 {
+  display: none;
+  position:fixed;
+  top: 20vh;
+  width:100%;
+  height:100%;
+  z-index:1;
+}
+
+#modal h2 {
+  margin:0;   
+}
+#modal1 h2 {
+  margin:0;   
+}
+
+#modal button {
+  display:inline-block;
+  width:100px;
+  margin-left:calc(100% - 100px - 10px);
+}
+#modal1 button {
+  display:inline-block;
+  width:100px;
+  margin-left:calc(100% - 100px - 10px);
+}
+
+#modal .modal_content {
+
+  width:600px;
+  height: 275px;
+  margin:100px auto;
+
+  background:#fff;
+  border:2px solid #666;
+}
+#modal1 .modal_content {
+
+  width:600px;
+  margin:100px auto;
+  height: 275px;
+
+  background:#fff;
+  border:2px solid #666;
+}
+
+#modal .modal_layer {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0, 0, 0, 0.5);
+  z-index:-1;
+}   
+#modal1 .modal_layer {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0, 0, 0, 0.5);
+  z-index:-1;
+}   

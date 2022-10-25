@@ -123,15 +123,25 @@
               </div>
               <input id='joinname1' onchange='joinname111()'
                 style=" border: 1px solid rgb(217,217,217); width:100%; height: 27px;" />
-
+               
+            </div>
+            
+            <div style=" width:28%; height: 55px; float: left; margin-left: 2%; ">
+              <div style=" width:100%; height: 25px; text-align: left; ">
+                아이디
+              </div>
+              <input id='joinid' onchange='joinid1()'
+                style=" border: 1px solid rgb(217,217,217); width:100%; height: 27px;" />
+               
             </div>
 
             <div style=" width:28%; height: 55px; float: left; margin-left: 2%; ">
-             
-            </div>
-
-            <div style=" width:28%; height: 55px; float: left; margin-left: 2%; ">
-             
+              <div style=" width:100%; height: 25px; text-align: left; ">
+                비밀번호
+              </div>
+              <input id='joinpw' type="password" onchange='joinpw1()'
+                style=" border: 1px solid rgb(217,217,217); width:100%; height: 27px;" />
+               
             </div>
 
 
@@ -142,22 +152,21 @@
               <div style=" width:100%; height: 25px; text-align: left; ">
               전화번호
               </div>
+              <input id='joinnum1' onchange='joinnum1()'
+            style="float: left; border: 1px solid rgb(217,217,217); width:30%; height: 27px;text-align:center;" />
               
-              <input id='joinum1' onchange='joinnum111()'
-                style=" float: left; border: 1px solid rgb(217,217,217); width:100%; height: 27px; width:25%; height: 27px;  text-align: center;" />
-             
               <div style="float :left; color : rgb(235,235,235); width:5%; height: 27px;  text-align:center;">
                 -
               </div>
-              <input id='joinnnum2' onchange='joinnum2()'
-                style="float: left; border: 1px solid rgb(217,217,217); width:100%; height: 27px; width:30%; height: 27px;  text-align: center;" />
+              <input id='joinnum2' onchange='joinnum2()'
+                style="float: left; border: 1px solid rgb(217,217,217);  width:30%; height: 27px;  text-align: center;" />
              
             
               <div style="float :left; color : rgb(235,235,235); width:5%; height: 27px;  text-align:center;">
                 -
               </div>
               <input id='joinnum3' onchange='joinnum3()'
-                style="float: left; border: 1px solid rgb(217,217,217); width:100%; height: 27px; width:30%; height: 27px;  text-align: center;" />
+                style="float: left; border: 1px solid rgb(217,217,217);  width:30%; height: 27px;  text-align: center;" />
              
             </div>
 
@@ -165,7 +174,7 @@
               <div style=" width:100%; height: 25px; text-align: left; ">
                 이메일
               </div>
-              <input placeholder="AAmugaeteacher@gmail.com" type="email" id='joinname2' onchange='joinemail()' required autofocus
+              <input placeholder="AAmugaeteacher@gmail.com" type="email" id='joinemail' onchange='joinemail1()' required autofocus
                 style="background-color: white; border: 1px solid rgb(217,217,217);  width:100%; height: 27px;  text-align: left;" />
              
             
@@ -246,7 +255,7 @@
 
 
         <div style="width: 100%; height : 40px; text-align: center; margin-top: 55px;">*항목은 필수 사항입니다.</div>
-        <div OnClick="location.href ='login.html'" style="font-size: 18px; width : 100px; height: 30px;color: black;font-weight: bold; background-color: rgb(191, 191, 191); margin: auto; border-radius: 5px;">다음</div>
+        <div OnClick= "comp()" style="font-size: 18px; width : 100px; height: 30px;color: black;font-weight: bold; background-color: rgb(191, 191, 191); margin: auto; border-radius: 5px;">완료</div>
     
 
       </div>

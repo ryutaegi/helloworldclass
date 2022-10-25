@@ -66,7 +66,7 @@
         <div class="line3"></div>
       </div>
     </nav>
-
+    <div class="section1">
 
     <div id="m1" class="box1" style="background-color: white; color: black;">Home</div>
     <div id="m2" class="box1" style="top: 150px; background-color: rgb(224, 30, 54);">
@@ -85,7 +85,7 @@
 
 
 
-    <div class="section1">
+    
       <!-- carousel를 구성할 영역 설정 -->
       <div id="before" style="width: 100%;">
         <!-- carousel를 사용하기 위해서는 class에 carousel와 slide 설정한다. -->
@@ -111,7 +111,7 @@
           <!-- class는 carousel-inner로 설정하고 role은 listbox에서 설정한다. -->
           <div class="carousel-inner" role="listbox">
             <!-- 이미지의 개수만큼 item을 만든다. 중요한 포인트는 carousel-indicators의 li 태그 개수와 item의 개수는 일치해야 한다. -->
-            <div OnClick="location.href =''" class="item active">
+            <div OnClick="location.href =''" class="item">
               <!-- 아미지 설정- -->
               <img src="./images/배너/1.png" style="width:100%">
               <!-- 캡션 설정 (생략 가능) -->
@@ -134,7 +134,7 @@
               <img src="./images/배너/5.jpg" style="width:100%">
             </div>
 
-            <div OnClick="location.href =''" class="item">
+            <div OnClick="location.href =''" class="item active">
               <img src="./images/배너/6.jpg" style="width:100%">
             </div>
 
@@ -194,7 +194,7 @@
     <div class="section1">
       <div id="next" style="position: relative;">
         <img src="./images/main22.png" style="width:100%;">
-        <img OnClick="location.href ='regist.html'" src="./images/main24.png" style="
+        <img id="registimg" src="./images/main24.png" style="
       width:30%;  position: absolute;
       top: 76%;
        left: 35%; 
@@ -523,7 +523,7 @@
       </div>
     </div>
 
-
+    <div class="section1">
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-white text-muted">
       <!-- Section: Social media -->
@@ -642,65 +642,60 @@
       <div style="float : left;width: 5%; height : 10px; background-color :rgb(20, 73,170)"> </div>
 
     </footer>
+  </div>
     <!-- Footer -->
 
     <script>
 
-      window.addEventListener("wheel", function (e) {
-        e.preventDefault();
-      }, { passive: false });
-      window.onload = function () {
-        const elm = document.querySelectorAll('.section1');
-        const elmCount = elm.length;
-        elm.forEach(function (item, index) {
-          item.addEventListener('mousewheel', function (event) {
-            event.preventDefault();
-            let delta = 0;
+window.onload = function(){
+      const elm = document.querySelectorAll('.section1');
+      const elmCount = elm.length;
+      elm.forEach(function(item, index){
+        item.addEventListener('mousewheel', function(event){
+          event.preventDefault();
+          let delta = 0;
 
-            if (!event) event = window.event;
-            if (event.wheelDelta) {
+          if (!event) event = window.event;
+          if (event.wheelDelta) {
               delta = event.wheelDelta / 120;
               if (window.opera) delta = -delta;
-            }
-            else if (event.detail)
+          } 
+          else if (event.detail)
               delta = -event.detail / 3;
 
-            let moveTop = window.scrollY;
-            let elmSelector = elm[index];
+          let moveTop = window.scrollY;
+          let elmSelector = elm[index];
 
-            // wheel down : move to next section
-            if (delta < 0) {
-              if (elmSelector !== elmCount - 1) {
-                try {
-
-                  moveTop = window.pageYOffset + elmSelector.nextElementSibling.getBoundingClientRect().top;
-                } catch (e) { }
-              }
+          // wheel down : move to next section
+          if (delta < 0){
+            if (elmSelector !== elmCount-1){
+              try{
+                moveTop = window.pageYOffset + elmSelector.nextElementSibling.getBoundingClientRect().top;
+              }catch(e){}
             }
-
-            // wheel up : move to previous section
-            else {
-              if (elmSelector !== 0) {
-                try {
-                  moveTop = window.pageYOffset + elmSelector.previousElementSibling.getBoundingClientRect().top;
-                } catch (e) { }
-              }
+          }
+          // wheel up : move to previous section
+          else{
+            if (elmSelector !== 0){
+              try{
+                moveTop = window.pageYOffset + elmSelector.previousElementSibling.getBoundingClientRect().top;
+              }catch(e){}
             }
+          }
 
-
-            const body = document.querySelector('html');
-            window.scrollTo({ top: moveTop, left: 0, behavior: 'smooth' });
-          });
+          const body = document.querySelector('html');
+          window.scrollTo({top:moveTop, left:0, behavior:'smooth'});
         });
-      }
+      });
+    }
     </script>
-
+    <script type="text/javascript" src="./script.js?ver=123"></script>
+    <script type="text/javascript" src="./mapmotion.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
 
-    <script type="text/javascript" src="./script.js?ver=123"></script>
-    <script type="text/javascript" src="./mapmotion.js"></script>
+   
 
 </body>
 

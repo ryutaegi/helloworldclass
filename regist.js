@@ -45,10 +45,7 @@ function change5(){
     location.href = "./join2.html";
   }
   }
-function registbt(){
-  alert("제출하였습니다")
-  location.href ='./index.html'
-  }
+
 
   function show () {
     document.querySelector(".background").className = "background show";
@@ -63,24 +60,70 @@ function registbt(){
 
 var joinname11;
 var joinnum11;
+var joinnum22;
+var joinnum33;
+var joinid;
+var joinpw;
+var joinemail;
+var infor = {};
 function joinname111()
 {
   joinname11 = document.getElementById('joinname1').value
-  alert("입력확인용 : "+ joinname11)
+
 }
-function joinum111() //여기서 막힘
+function joinnum1()
 {
-  alert("입력확인용 : ")
-  const joinnum11 = document.getElementById('joinnum1').value
+  joinnum11 = document.getElementById('joinnum1').value
+
+}
+function joinnum2()
+{
+  joinnum22 = document.getElementById('joinnum2').value
+
+}
+function joinnum3()
+{
+  joinnum33 = document.getElementById('joinnum3').value
   
 }
+function joinid1()
+{
+  joinid = document.getElementById('joinid').value
+  
+}
+function joinpw1()
+{
+  joinpw = document.getElementById('joinpw').value
+  
+}
+function joinemail1()
+{
+  joinemail = document.getElementById('joinemail').value
+  
+}
+function comp()
+{
+// alert("이름 : "+joinname11)
+// alert("전화번호 : "+joinnum11+joinnum22+joinnum33)
+// alert("아이디 : "+joinid)
+// alert("비밀번호 : "+joinpw)
+// alert("이메일 : "+joinemail)
+infor = {
+  "joinname" : joinname11,
+  "joinnum1" : joinnum11,
+  "joinnum2" : joinnum22,
+  "joinnum3" : joinnum33,
+  "name" : joinname11,
+  "joinid" : joinid,
+  "joinpw" : joinpw,
+  "email" : joinemail
+};
 
-// var infor = {
-//   "loginid" : joinname11,
-//   "loginpassword" : ,
-//   "name" :,
-//   "contact" :,
-//   "email" : 
-// };
-// Json Object를 저장하기
-localStorage.setItem("cast", JSON.stringify(cast));
+//Json Object를 저장하기
+
+localStorage.setItem("infor", JSON.stringify(infor));
+//alert(JSON.stringify(infor))
+alert("계정 생성이 완료되었습니다.")
+location.href ='./login.html'
+
+}

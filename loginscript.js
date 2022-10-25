@@ -2,10 +2,12 @@ const id = document.getElementById('id')
 const password = document.getElementById('password')
 const login = document.getElementById('login')
 let errStack = 0;
+var infor = JSON.parse(localStorage.getItem("infor"))
+
 
 login.addEventListener('click', () => {
-    if (id.value == 'admin@admin') {
-        if (password.value == '1234') {
+    if (id.value == infor["joinid"]) {
+        if (password.value == infor["joinpw"]) {
             alert('로그인되었습니다.');
             var cast = {
                 "login10" : 1
