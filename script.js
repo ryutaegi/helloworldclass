@@ -3,6 +3,13 @@ const nav = document.querySelector(".nav-links");
 const navlinks = document.querySelectorAll(".nav-links li");
 var loginn = { "login10" : 0}
 
+if(!JSON.parse(localStorage.getItem("cast"))){
+
+  localStorage.setItem("cast", JSON.stringify(loginn));
+}
+//localStorage.setItem("cast", JSON.stringify(loginn));
+
+
 const navAnimation = () => {
   navlinks.forEach((link, index) => {
     // 애니메이션이 있을 때
@@ -119,84 +126,6 @@ div4.addEventListener("mouseout", function (e) {
   });
 });
 
-
-
-if (matchMedia("screen and (max-width: 768px)").matches) {
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    slidesPerGroup: 1,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-
-  var swiper2 = new Swiper(".mySwiper2", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    slidesPerGroup: 1,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-}//else if(matchMedia("screen and (max-width: 1023px)").matches){
-//console.log("tablet");
-//}
-else if (matchMedia("screen and (min-width: 1024px)").matches) {
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 2,
-    spaceBetween: 30,
-    slidesPerGroup: 2,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-
-  var swiper2 = new Swiper(".mySwiper2", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    slidesPerGroup: 3,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-}
-
-
-// window.onresize = function () {
-//   document.location.reload();
-// };
-
-
-
 loginn = JSON.parse(localStorage.getItem("cast"))
 
 
@@ -237,7 +166,8 @@ else{
 
 }
 
-//ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ이자리
+
+
 var teach = document.getElementById("teach");
 var regist = document.getElementById("regist");
 var m2 = document.getElementById("m2");
@@ -368,3 +298,83 @@ m2.addEventListener("click",function (e){
 
 
 
+
+
+// window.onresize = function () {
+//   document.location.reload();
+// };
+
+
+
+
+//ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ이자리
+if (matchMedia("screen and (max-width: 768px)").matches) {
+  
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  var swiper2 = new Swiper(".mySwiper2", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+}//else if(matchMedia("screen and (max-width: 1023px)").matches){
+//console.log("tablet");
+//}
+else if (matchMedia("screen and (min-width: 1024px)").matches) {
+
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    slidesPerGroup: 2,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+ 
+  var swiper2 = new Swiper(".mySwiper2", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+}
