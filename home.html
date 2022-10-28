@@ -47,11 +47,11 @@
       </div>
 
       <ul class="nav-links">
-        <li><a href="login.html">로그인</a></li>
-        <li><a href="#">홈</a></li>
-        <li><a href="teacher.html">강사 찾기</a></li>
-        <li><a href="regist.html">강사 등록</a></li>
-        <li><a href="detail.html">가이드</a></li>
+        <li onclick="logclick()" id="log1" style="font-weight: bold;">로그인</li>
+        <li id = "home" style="font-weight: bold;">홈</a></li>
+        <li id="teach" style="font-weight: bold;">강사 찾기</li>
+        <li id="regist" style="font-weight: bold;">강사 등록</li>
+        <li id="guide" style="font-weight: bold;">가이드</a></li>
 
       </ul>
       <div style="z-index: 30; margin-left: 90%; position: fixed; margin-top: 0;" class="burger">
@@ -79,29 +79,34 @@
 
 
 
-    <div style="text-align: center; position: relative; height: 1000px; ">
+    <div style="text-align: center; position: relative; height: 2000px; ">
       <div style="width: 1000px; height: 180px; ">
 
       </div>
       <div class="youdiv">
         <div class="youfont1">
-          | 교실과 세계를 잇는
+          | My Page
         </div>
 
         <div class="youfont3">
-          헬로우월드클래스
+          마이 헬로우월드클래스
         </div>
 
       </div>
 
 
 
-      <div class="youtubeclass1" style="height: 550px">
+      <div class="youtubeclass1" style="height: 1250px">
         <div
           style="border-radius: 10px 10px 0px 0px; float: left; background-color: rgb(217,217,217); width:100%; height: 30px;">
-        
+
         </div>
-        헬로우월드클래스 소개
+        <div style="width: 100%; height:100px">
+        <img src="./images/mypage.png" style="width:80px; margin-top: 20px; margin-left : 10px; float: left;">
+      <span id="myname" style="margin-left: 20px; font-size: 30px; font-weight:bold; float :left; line-height: 120px;">정보없음</span>
+      <span  style="font-size: 30px; float :left; line-height: 120px;">님 ></span>
+      
+      </div>
       </div>
     </div>
 
@@ -245,6 +250,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
 
   <script type="text/javascript" src="./script.js?ver=123"></script>
+  <script type="text/javascript" src="./home.js"></script>
 </body>
 
 
