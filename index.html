@@ -353,160 +353,18 @@
         <!-- Swiper -->
         <div class="swiper mySwiper2" style="height: 780px;">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="slidemenu2" style="text-align: center;">
-                <div class="classimg">
-                  <img src="./images/증명사진/마동석.jpg" style="width: 100%;">
-                </div>
-                <div class="classflag">
-                  <img src="./images/국기/미국.png" style="height: 100%">
-                </div>
-
-                <div class="classcty">
-                  미국
-                </div>
-                <div class="classname">
-                  돈 리
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="slidemenu2" style="text-align: center;">
-                <div class="classimg">
-                  <img src="./images/증명사진/유태기.png" style="width: 100%;">
-                </div>
-                <div class="classflag">
-                  <img src="./images/국기/대한민국.png" style="height: 100%">
-                </div>
-
-                <div class="classcty">
-                  대한민국
-                </div>
-                <div class="classname">
-                  아무개
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slidemenu2" style="text-align: center;">
-                <div class="classimg">
-                  <img src="./images/증명사진/마동석.jpg" style="width: 100%;">
-                </div>
-                <div class="classflag">
-                  <img src="./images/국기/캐나다.jpg" style="height: 100%">
-                </div>
-
-                <div class="classcty">
-                  캐나다
-                </div>
-                <div class="classname">
-                  마석도
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slidemenu2" style="text-align: center;">
-                <div class="classimg">
-                  <img src="./images/증명사진/마동석.jpg" style="width: 100%;">
-                </div>
-                <div class="classflag">
-                  <img src="./images/국기/미국.png" style="height: 100%">
-                </div>
-
-                <div class="classcty">
-                  미국
-                </div>
-                <div class="classname">
-                  케빈
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slidemenu2" style="text-align: center;">
-                <div class="classimg">
-                  <img src="./images/증명사진/마동석.jpg" style="width: 100%;">
-                </div>
-                <div class="classflag">
-                  <img src="./images/국기/미국.png" style="height: 100%">
-                </div>
-
-                <div class="classcty">
-                  미국
-                </div>
-                <div class="classname">
-                  케빈
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slidemenu2" style="text-align: center;">
-                <div class="classimg">
-                  <img src="./images/증명사진/마동석.jpg" style="width: 100%;">
-                </div>
-                <div class="classflag">
-                  <img src="./images/국기/미국.png" style="height: 100%">
-                </div>
-
-                <div class="classcty">
-                  미국
-                </div>
-                <div class="classname">
-                  케빈
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slidemenu2" style="text-align: center;">
-                <div class="classimg">
-                  <img src="./images/증명사진/마동석.jpg" style="width: 100%;">
-                </div>
-                <div class="classflag">
-                  <img src="./images/국기/미국.png" style="height: 100%">
-                </div>
-
-                <div class="classcty">
-                  미국
-                </div>
-                <div class="classname">
-                  케빈
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slidemenu2" style="text-align: center;">
-                <div class="classimg">
-                  <img src="./images/증명사진/마동석.jpg" style="width: 100%;">
-                </div>
-                <div class="classflag">
-                  <img src="./images/국기/미국.png" style="height: 100%">
-                </div>
-
-                <div class="classcty">
-                  미국
-                </div>
-                <div class="classname">
-                  케빈
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slidemenu2" style="text-align: center;">
-                <div class="classimg">
-                  <img src="./images/증명사진/마동석.jpg" style="width: 100%;">
-                </div>
-                <div class="classflag">
-                  <img src="./images/국기/미국.png" style="height: 100%">
-                </div>
-
-                <div class="classcty">
-                  미국
-                </div>
-                <div class="classname">
-                  케빈
-                </div>
-              </div>
-            </div>
+            <script>
+              let name = ["노라", "데프네"];
+              let country = ["우즈베키스탄", "튀르키예"];
+              let flag = ["우즈베키스탄", "튀르키예"];
+             for(var i = 0; i<12; i++) { 
+             document.write('<div class="swiper-slide"><div class="slidemenu2" style="text-align: center;"><div class="classimg">');
+            document.write('<img src="./images/증명사진/'+(i+1)+'.jpg"');
+            document.write('style="width: 100%;"></div><div class="classflag">');
+              document.write('<img src="./images/국기/'+flag[i]+'.png" style="height: 100%"></div><div class="classcty">'+country[i]+'</div><div class="classname">'); 
+              document.write(name[i]+'</div></div></div>');  
+             }
+            </script>
 
 
 
