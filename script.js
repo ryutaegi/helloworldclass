@@ -257,27 +257,27 @@ m1.addEventListener("click",function (e){
  })
 
 m2.addEventListener("click",function (e){
-  if(loginn["login10"]==1)
-  {
-   location.href = "./teach.html";
-  }
-  else{
-   Swal.fire({
-     title: '로그인 후 서비스 이용이 가능합니다',
-     height: 500,
-     width : 500,
-     imageUrl: "./images/helloworldclass1.png",
-     showCancelButton: true,
-     confirmButtonColor: '#3085d6',
-     cancelButtonColor: '#d33',
-     confirmButtonText: '로그인 페이지로 이동',
-     cancelButtonText: '취소',
-   }).then((result) => {
-     if (result.value) {
-       location.href = "./login.html";  //"삭제" 버튼을 눌렀을 때 작업할 내용을 이곳에 넣어주면 된다. 
-     }
-   })
-  }
+  // if(loginn["login10"]==1)
+  // {
+    location.href = "./teach.html";
+  // }
+  // else{
+  //  Swal.fire({
+  //    title: '로그인 후 서비스 이용이 가능합니다',
+  //    height: 500,
+  //    width : 500,
+  //    imageUrl: "./images/helloworldclass1.png",
+  //    showCancelButton: true,
+  //    confirmButtonColor: '#3085d6',
+  //    cancelButtonColor: '#d33',
+  //    confirmButtonText: '로그인 페이지로 이동',
+  //    cancelButtonText: '취소',
+  //  }).then((result) => {
+  //    if (result.value) {
+  //      location.href = "./login.html";  //"삭제" 버튼을 눌렀을 때 작업할 내용을 이곳에 넣어주면 된다. 
+  //    }
+  //  })
+  // }
  
  })
  

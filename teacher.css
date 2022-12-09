@@ -22,9 +22,7 @@
   overflow: hidden;
 }
 .teacherimg img{
-  max-height: initial;
-  margin-top: -15%;
-  transform:scale(1.1);
+  height : 200px;
 }
 .teacherflag{
 margin-top: -20px;

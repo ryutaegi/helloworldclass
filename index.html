@@ -6,7 +6,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>헬로월드클래스</title>
+  <title>헬로우월드클래스</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -251,7 +251,7 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <img src="./images/slide1.png">
+              <img src="./images/slide1.png">ㅏ
               <div class="slidemenu">
                 슬라이드 5
               </div>
@@ -354,22 +354,18 @@
         <div class="swiper mySwiper2" style="height: 780px;">
           <div class="swiper-wrapper">
             <script>
-              let name = ["노라", "데프네"];
-              let country = ["우즈베키스탄", "튀르키예"];
-              let flag = ["우즈베키스탄", "튀르키예"];
+              let name = ["노라", "데프네", "비스와니트" ,"왕진운", "박지아", "리온","에드윈"];
+              let country = ["우즈베키스탄", "튀르키예", "인도", "대만", "미얀마", "몽골","콜롬비아"];
+              let htmllink = ["https://ubiquitous-acapella-ce1.notion.site/Kabilova-Khusnora-5c041be56ff54c99b1989a7ad625ca79", "https://ubiquitous-acapella-ce1.notion.site/4a36c4d53b664aae955edef6125f1124", "https://ubiquitous-acapella-ce1.notion.site/3843bd7a2db147c798bd5a06a19b3be5", "https://ubiquitous-acapella-ce1.notion.site/38d1d34f43fb4b718aeb4d123e3f0733", "https://ubiquitous-acapella-ce1.notion.site/05e2ccc2f14e470581f4fab65e158166", "https://ubiquitous-acapella-ce1.notion.site/b73183591e594fd79aa5950f7cb22414", "https://ubiquitous-acapella-ce1.notion.site/4c5ef68cc5444cdbb8aac58eed4a962b"];
+
              for(var i = 0; i<12; i++) { 
-             document.write('<div class="swiper-slide"><div class="slidemenu2" style="text-align: center;"><div class="classimg">');
+             document.write('<div OnClick="location.href =htmllink['+i+']" class="swiper-slide"><div class="slidemenu2" style="text-align: center;"><div class="classimg">');
             document.write('<img src="./images/증명사진/'+(i+1)+'.jpg"');
             document.write('style="width: 100%;"></div><div class="classflag">');
-              document.write('<img src="./images/국기/'+flag[i]+'.png" style="height: 100%"></div><div class="classcty">'+country[i]+'</div><div class="classname">'); 
+              document.write('<img src="./images/국기/'+country[i]+'.png" style="height: 100%"></div><div class="classcty">'+country[i]+'</div><div class="classname">'); 
               document.write(name[i]+'</div></div></div>');  
              }
             </script>
-
-
-
-
-
 
 
           </div>
