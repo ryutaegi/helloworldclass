@@ -105,19 +105,12 @@
             <li data-target="#carousel-example-generic" data-slide-to="5"></li>
             <li data-target="#carousel-example-generic" data-slide-to="6"></li>
             <li data-target="#carousel-example-generic" data-slide-to="7"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="8"></li>
           </ol>
           <!-- 실제 이미지 아이템 -->
           <!-- class는 carousel-inner로 설정하고 role은 listbox에서 설정한다. -->
           <div class="carousel-inner" role="listbox">
             <!-- 이미지의 개수만큼 item을 만든다. 중요한 포인트는 carousel-indicators의 li 태그 개수와 item의 개수는 일치해야 한다. -->
-            <div OnClick="location.href =''" class="item">
-              <!-- 아미지 설정- -->
-              <img src="./images/배너/1.png" style="width:100%">
-              <!-- 캡션 설정 (생략 가능) -->
-              <!-- 글자 색은 검은색 -->
-
-            </div>
+            
             <div OnClick="location.href =''" class="item">
               <img src="./images/배너/2.jpg" style="width:100%">
 
@@ -315,19 +308,19 @@
             <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 3%">
               <img src="./images/pro2.png" style=" width: 50px; float : left">
               <div style="text-align : left; margin-left: 70px; font-weight: bold; margin-top: 3px;">강사 | 케빈 | 미국</div>
-              <div style="text-align : left; margin-left: 70px;">게임을 통해서 배재중학교 학생들과세계시민교육 ...</div>
+              <div style="text-align : left; margin-left: 70px;">게임을 통해서 천호 청소년 문화의집 학생들과 세계시민교육 ...</div>
             </div>
             <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 3%">
               <img src="./images/pro3.png" style=" width: 50px; float : left">
-              <div style="text-align : left; margin-left: 70px; font-weight: bold; margin-top: 3px;">교사 | 안은영 | 보성중
+              <div style="text-align : left; margin-left: 70px; font-weight: bold; margin-top: 3px;">교사 | 안은영 | 강명초
               </div>
               <div style="text-align : left; margin-left: 70px;">프랑스에서 오신 강사님들 덕분에 학생들이 ...</div>
             </div>
             <div style="width:900px; height: 50px; float : left; margin-top: 20px; margin-left : 3%">
               <img src="./images/pro1.png" style=" width: 50px; float : left">
-              <div style="text-align : left; margin-left: 70px; font-weight: bold; margin-top: 3px;">학생 | 장현웅 | 배재고
+              <div style="text-align : left; margin-left: 70px; font-weight: bold; margin-top: 3px;">학생 | 장현웅 | 길동초
               </div>
-              <div style="text-align : left; margin-left: 70px;">프랑스에서 오신 강사님들 덕분에 세계시민교육에 대하여 ...</div>
+              <div style="text-align : left; margin-left: 70px;">프랑스에서 오신 강사님들 덕분에 세계시민교육에 대해서 ...</div>
             </div>
           </div>
         </div>
@@ -346,7 +339,7 @@
           <div class="youfont3">
             이번달 클래스
           </div>
-          <div class="youfont2">
+          <div class="youfont2" OnClick="location.href ='teach.html'">
             강사 더보기 >
           </div>
         </div>
@@ -358,7 +351,7 @@
               let country = ["우즈베키스탄", "튀르키예", "인도", "대만", "미얀마", "몽골","콜롬비아"];
               let htmllink = ["https://ubiquitous-acapella-ce1.notion.site/Kabilova-Khusnora-5c041be56ff54c99b1989a7ad625ca79", "https://ubiquitous-acapella-ce1.notion.site/4a36c4d53b664aae955edef6125f1124", "https://ubiquitous-acapella-ce1.notion.site/3843bd7a2db147c798bd5a06a19b3be5", "https://ubiquitous-acapella-ce1.notion.site/38d1d34f43fb4b718aeb4d123e3f0733", "https://ubiquitous-acapella-ce1.notion.site/05e2ccc2f14e470581f4fab65e158166", "https://ubiquitous-acapella-ce1.notion.site/b73183591e594fd79aa5950f7cb22414", "https://ubiquitous-acapella-ce1.notion.site/4c5ef68cc5444cdbb8aac58eed4a962b"];
 
-             for(var i = 0; i<12; i++) { 
+             for(var i = 0; i<7; i++) { 
              document.write('<div OnClick="location.href =htmllink['+i+']" class="swiper-slide"><div class="slidemenu2" style="text-align: center;"><div class="classimg">');
             document.write('<img src="./images/증명사진/'+(i+1)+'.jpg"');
             document.write('style="width: 100%;"></div><div class="classflag">');
@@ -403,11 +396,10 @@
               <h6 class="text-uppercase fw-bold mb-4" style="color: black;">헬로우월드클래스
               </h6>
               <p>
-                대표이사 : 000<br>
-                개인정보 책임 관리자 : 000<br>
-                사업자등록번호 : 0000000000000000000 <br>
-                통신판매업신고증 : 0000000000000000000 <br>
-                직업정보제공사업 신고번호 :000000000000000<br>
+                대표이사 : 신명진<br>
+                개인정보 책임 관리자 : 신명진<br>
+                사업자등록번호 : 398-27-01543
+                
               </p>
             </div>
             <!-- Grid column -->
@@ -455,12 +447,12 @@
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
               <!-- Links -->
               <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-              <p><i class="fas fa-home me-3 text-secondary"></i> 주소 : 00000000000000000000000000</p>
+              <p><i class="fas fa-home me-3 text-secondary"></i> 주소 : 경기도 하남시 대청로 38, 6층 R118호</p>
               <p>
                 <i class="fas fa-envelope me-3 text-secondary"></i>
-                이메일 : 0000000000000@0000000
+                이메일 : sonofsinmyung@naver.com
               </p>
-              <p><i class="fas fa-phone me-3 text-secondary"></i> 012-345-6789<br>
+              <p><i class="fas fa-phone me-3 text-secondary"></i> 010 - 8328 - 5962<br>
                 평일 10 : 00 ~ 18 : 00<br>
                 (점심시간 12 : 00~ 13:00제외, 주말 공휴일 제외)</p>
             </div>
